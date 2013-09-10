@@ -84,6 +84,8 @@ h3 {font:18px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
 .center .mainBlock1 .imgBlock .img_bg {background:url(main_img.jpg) no-repeat; width:100%; height:330px;}
 .center .mainBlock1 .imgBlock .img_bgr {background:url(main_imh.jpg) right 0 no-repeat; width:100%; height:330px; position:relative;}
 
+/* ------------------ «¿Ã≈Õ»“‹ ---------------------- */
+
 .center .mainBlock1 .imgBlock .imgBlock1 img {position:absolute; top:0;}
 .center .mainBlock1 .imgBlock .imgBlock1 .Img1 {left:1%; z-index:2;}
 .center .mainBlock1 .imgBlock .imgBlock1 .Img2 {left:20%; z-index:1;}
@@ -100,6 +102,9 @@ h3 {font:18px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
 .center .mainBlock1 .menuBlock .menu td div.list a{color:#2378ac;text-decoration:none;border-bottom:1px dashed #2378ac;font-size:13px}
 .center .mainBlock1 .menuBlock .menu td div.list a:hover{border-bottom:0}
 .center .mainBlock1 .menuBlock .menu td div.list span{color:#ff0000;font-size:11px;margin-left:5px;margin-top:0px;position:absolute}
+.center .mainBlock1 .menuBlock .menu td div.list span a{color:#ff0000;text-decoration:none;border-bottom:0;font-size:11px}
+
+/* ------------------ «¿Ã≈Õ»“‹ ---------------------- */
 
 .center .mainBlock2 {width:100%; padding-top:40px;}
 .center .mainBlock2 h1 {font:18px 'MetaMediumCyrLF-RomanRegular';}
