@@ -95,20 +95,20 @@ var errorLogoImgSrc = '/upload/altasib.errorsend.gif';
 			<div class="block1">
 				<div class="left">
 					<div class="search">
-						<form action="http://www.vtbins.ru/search/" method="get">      
+						<form action="http://www.vtbins.ru/search/" method="get">
 							<script type="text/javascript">
 								function doClear(theText){if (theText.value == theText.defaultValue) { theText.value = "" }}
 								function doDefault(theText){if (theText.value == "") { theText.value = theText.defaultValue }}
 							</script>
 							<div class="textfield"><input onfocus="doClear(this)" onblur="doDefault(this)" type="text" value="Поиск" name="q"></div>
-							<input type="submit" value class="btn"> 
+							<input type="submit" value class="btn">
 						</form>
 					</div>
 					<div class="txt1">
 						<noindex><a target="_blank" rel="nofollow" href="http://www.vtb.ru/group/">Группа ВТБ</a></noindex>
 						<noindex><a rel="nofollow" href="http://vtbins.com/" title="English">English</a></noindex>					</div>
-					
-								
+
+
 					<div class="Clear"></div>
 				</div>
 				<div class="right">
@@ -124,17 +124,17 @@ var errorLogoImgSrc = '/upload/altasib.errorsend.gif';
 					$(".head .block1 .right .cityBlock .cityList").show();
 				return false;
 			});
-			
+
 			$(".head .block1 .right .cityBlock .cityList .list .btnClose a").click(function(){
 				$(".head .block1 .right .cityBlock .cityList").hide()
 				return false;
 			});
-			
+
 			$(".head .block1 .right .cityBlock .cityList .list li a").click(function(){
-			
+
 				$(".head .block1 .right .cityBlock .current_city").text($(this).text());
 				$(".head .block1 .right .cityBlock .cityList").hide();
-				
+
 				var request = "VTB_INS_CITY_NAME="+$(this).text()+"&VTB_INS_CITY_CODE="+$(this).attr("id");
 				$.ajax({
 					url: "/bitrix/components/vtb_ins/switch.city/templates/.default/ajax.php",
@@ -458,7 +458,7 @@ var errorLogoImgSrc = '/upload/altasib.errorsend.gif';
 		</div>
 		<div class="bg_b"></div>
 	</div>
-</div></noindex>					
+</div></noindex>
 <div class="txt1">
 	<a href="http://www.vtbins.ru/about/contacts/regional/">Контакты и офисы</a>
 	<div class="callback">
@@ -596,22 +596,22 @@ $.fn.showIn = function(){
 $.fn.showOut = function(){
 	$(this).removeClass('visible').fadeOut(500);
 };
-		
+
 $(document).ready(function (){
 
 	$(".phones .navigate .item").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1.png") no-repeat scroll 0 0 transparent');
 	$(".phones .navigate .item:first").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1_1.png") no-repeat scroll 0 0 transparent');
 
 	$(".phones .navigate .item").click(function(){
-		clearTimeout(objTimerPnones);	
+		clearTimeout(objTimerPnones);
 
 		objTimerPnones = window.setTimeout("reload_pict_nav_phone('over')", 5000);
 		var idNextDot = $(this).index();
 		var idCurrDot = $(".over .numbers li.visible");
-		
+
 		$(".phones .navigate .item").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1.png") no-repeat scroll 0 0 transparent');
 		$(".phones .navigate .item").eq(idNextDot).css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1_1.png") no-repeat scroll 0 0 transparent');
-		
+
 		if (idNextDot != idCurrDot.index()){
 			$(".over .numbers li").eq(idNextDot).showIn();
 			$(idCurrDot).showOut()
@@ -624,9 +624,9 @@ $(document).ready(function (){
 function reload_pict_nav_phone(obj){
 
 	var currBanner = $("."+obj+" .numbers li.visible");
-	var countBanner = $("."+obj+" .numbers li").length;	
-	indexBanner = currBanner.index();	
-	
+	var countBanner = $("."+obj+" .numbers li").length;
+	indexBanner = currBanner.index();
+
 	$(".phones .navigate .item").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1.png") no-repeat scroll 0 0 transparent');
 
 	if ((indexBanner+1) < countBanner){
@@ -685,63 +685,56 @@ var objTimerPnones = window.setTimeout("reload_pict_nav_phone('over')", 5000);
 							</ul>
 		<div class="Clear"></div>
 	</div>
- 
+
 		  <div class="logo"></div>
 		</div>
 	</div>
 	<div class="center">
 		<div class="mainBlock">
-			
+
 <div class="mainBlock1">
 	<div class="conteiner">
 		<div class="imgBlock">
 			<div class="img_bg">
 				<div class="img_bgr">
 					<div class="imgBlock1">
-													<a href="http://www.vtbins.ru/individual/occurrence/"><img src="vtbins.ru_files/img10000.png" alt="" class="Img1"></a>
+							<a href="http://www.vtbins.ru/individual/occurrence/"><img src="vtbins.ru_files/img10000.png" alt="" class="Img1"></a>
 							<a href="http://www.vtbins.ru/individual/auto_insurance/osago/"><img src="vtbins.ru_files/img20000.png" alt="" class="Img2"></a>
 							<a href="http://www.vtbins.ru/individual/abroad/"><img src="vtbins.ru_files/img30000.png" alt="" class="Img3"></a>
 							<a href="http://www.vtbins.ru/individual/property/"><img src="vtbins.ru_files/img40000.png" alt="" class="Img4"></a>
-											</div>
+							<a href="#"><img src="vtbins.ru_files/img50000.png" alt="" class="Img5"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 			<div class="menuBlock">
 			<div class="conteiner">
 				<div class="menu">
 					<table>
 						<tr>
-							<td><a href="http://www.vtbins.ru/individual/occurrence/">Жизнь и здоровье</a>
-								<div class="promo">
-									<a href="http://www.vtbins.ru/individual/occurrence/online/">
-										Купить онлайн									</a>
-								</div>
+							<td>
+							  <a href="http://www.vtbins.ru/individual/occurrence/">Жизнь и здоровье</a>
+							 	<div class="list"><a href="">ОтЛичная защита</a><span>Онлайн</span></div>
 							</td>
-							<td><a href="http://www.vtbins.ru/individual/auto_insurance/osago/">Автострахование</a></td>
+							<td>
+							   <a href="http://www.vtbins.ru/individual/auto_insurance/osago/">Автострахование</a>
+							   <div class="list"><a href="">Каско</a></div>
+							   <div class="list"><a href="">ОСАГО</a></div>
+							 </td>
 							<td><a href="http://www.vtbins.ru/individual/abroad/">Путешествия</a>
-								<div class="promo">
-									<a href="https://www.vtbins.ru/individual/abroad/online/">
-										Купить онлайн									</a>
-								</div>
+								<div class="list"><a href="">ВЗР</a><span>Онлайн</span></div>
 							</td>
-							<td><a href="http://www.vtbins.ru/individual/property/">Имущество</a>
-								<div class="promo drop">
-									<a href="https://www.vtbins.ru/individual/property/kvartira_online/">
-										Купить онлайн&nbsp;&nbsp;&nbsp;
-										<i></i>
-									</a>
-								</div>
-								<div class="dropdown-container">
-									<div class="dropdown">
-										<div class="border">
-											<a href="http://www.vtbins.ru/individual/property/kvartira_online/">Квартира</a>
-											<a href="http://www.vtbins.ru/individual/property/dom_online/">Дом</a>
-										</div>
-									</div>
-								</div>
-							</td>
+							<td>
+							  <a href="http://www.vtbins.ru/individual/property/">Имущество</a>
+              	<div class="list"><a href="">Квартиры</a><span>Онлайн</span></div>
+              	<div class="list"><a href="">Дом</a><span>Онлайн</span></div>
+             </td>
+             <td>
+							  <a href="">Прочие продукты</a>
+              	<div class="list"><a href="">Потеря работы</a><span>Онлайн</span></div>
+             </td>
 						</tr>
 					</table>
 				</div>
@@ -756,7 +749,7 @@ var objTimerPnones = window.setTimeout("reload_pict_nav_phone('over')", 5000);
 			return false;
 		});
 	});
-</script>			
+</script>
 			<div class="mainBlock2">
 				<div class="conteiner">
 					<div class="lCol">
@@ -808,7 +801,7 @@ $(document).ready(function(){
 
 	ins_parent = "/individual/auto_insurance/";
 	ins_child = $("#calcSelect").attr("value");
-	
+
 	$("#goToURL").click(function(){
 		window.location.href = ins_parent+ins_child;
 		return false;
@@ -855,7 +848,7 @@ $(document).ready(function(){
 		</div>
 		<input id="goToURL" type="submit" value class="btn">
 	</div></noindex>
-	
+
 </div>
 <div class="bg_b"></div>
 						</div>
@@ -871,15 +864,15 @@ $(document).ready(function(){
 		</ul>
 	<a href="http://www.vtbins.ru/about/press-centre/news/">Все новости</a>
 </div>
-						
+
 <script type="text/javascript">
 	var nElement = 4;
 </script>
 
 <div class="bannerBlock">
-	
+
 	<div class="banner">
-		<div class="bannerAnimate">	
+		<div class="bannerAnimate">
 					<div id="banner_267046" class="Img">
 				<a href="http://www.vtbins.ru/about/ratings/">
 					<img src="vtbins.ru_files/zqtkqgub.jpg" alt="Standard&amp;Poor’s" width="474" height="90">
@@ -905,7 +898,7 @@ $(document).ready(function(){
 					<img src="vtbins.ru_files/fitchrat.jpg" alt="FitchRatings" width="474" height="90">
 				</a>
 			</div>
-							</div>	
+							</div>
 	</div>
 
 	<div class="navigate">
@@ -915,9 +908,9 @@ $(document).ready(function(){
 					<div class="item"></div>
 					<div class="item"></div>
 				</div>
-	
+
 </div>
-	
+
 <script type="text/javascript">
 $.fn.slideIn = function(){
 	if ($(this).hasClass('visible')) return;
@@ -928,20 +921,20 @@ $.fn.slideIn = function(){
 $.fn.slideOut = function(){
 	$(this).removeClass('visible').animate({bottom:-$(this).height()},500,function(){$(this).hide()});
 };
-		
+
 $(document).ready(function (){
 	$(".bannerBlock .navigate .item:first").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1_1.png") no-repeat scroll 0 0 transparent');
 
 	$(".bannerBlock .navigate .item").click(function(){
-		clearTimeout(objTimer);	
+		clearTimeout(objTimer);
 
 		objTimer = window.setTimeout("reload_pict_nav('banner')", 5000);
 		var idNextDot = $(this).index();
 		var idCurrDot = $("div.Img.visible");
-		
+
 		$(".bannerBlock .navigate .item").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1.png") no-repeat scroll 0 0 transparent');
 		$(".bannerBlock .navigate .item").eq(idNextDot).css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1_1.png") no-repeat scroll 0 0 transparent');
-		
+
 		if (idNextDot != idCurrDot.index()){
 			$("div.Img").eq(idNextDot).slideIn();
 			$(idCurrDot).slideOut()
@@ -953,9 +946,9 @@ $(document).ready(function (){
 
 function reload_pict_nav(obj){
 	var currBanner = $("."+obj+" div.Img.visible");
-	var countBanner = $("."+obj+" div.Img").length;	
-	indexBanner = currBanner.index();	
-	
+	var countBanner = $("."+obj+" div.Img").length;
+	indexBanner = currBanner.index();
+
 	$(".bannerBlock .navigate .item").css("background", 'url("/bitrix/templates/index_vtbins/images/bullet1.png") no-repeat scroll 0 0 transparent');
 
 	if ((indexBanner+1) < countBanner){
@@ -985,7 +978,7 @@ var objTimer = window.setTimeout("reload_pict_nav('banner')", 5000);
 							<noindex><a href="http://www.vtbins.ru/about/links/" rel="nofollow">Полезные ссылки</a></noindex>
 						</div>
 						<div class="item">
-							
+
 <span><noindex><a href="http://www.vtbins.ru/#" rel="nofollow" title="Страховой будильник" id="form_128" class="consultLink">Страховой будильник</a></noindex></span>
 <div class="insuranceAlarmClock">
 	<div class="bg_t"></div>
@@ -993,43 +986,43 @@ var objTimer = window.setTimeout("reload_pict_nav('banner')", 5000);
 		<div class="btnClose"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clot.png" alt="Закрыть"></a></div>
 		<h1>Страховой будильник</h1>
 		<div class="messages messages_128"></div>
-		
-		<form name="insuranceAlarmClock" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="128">		
-								
+
+		<form name="insuranceAlarmClock" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="128">
+
 						<div class="line">
 				<div class="text">Ваше имя</div>
-								
-								
-						
-					
-																<div class="textfield1">	
+
+
+
+
+																<div class="textfield1">
 							<input id="SNP" name="form_text_4879" type="text" class="input_gr_128" value>
 						</div>
 										<div class="Clear"></div>
-											
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
 												</div>
-								
+
 						<div class="line">
 				<div class="text">Дата окончания полиса</div>
-								
-								
-						
-					
-											
-					
-					
-						
 
-<script type="text/javascript" src="vtbins.ru_files/utils000.js"></script> 
-<script type="text/javascript" src="vtbins.ru_files/popup_me.js"></script> 
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="vtbins.ru_files/utils000.js"></script>
+<script type="text/javascript" src="vtbins.ru_files/popup_me.js"></script>
 
 <script type="text/javascript" src="vtbins.ru_files/core_fx0.js"></script>
 <script type="text/javascript" src="vtbins.ru_files/core_pop.js"></script>
@@ -1058,252 +1051,252 @@ $("#form_date_4880").blur(function(){
 	$(this).css('color','#000');
 });
 </script>
-	
+
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
-								
+
 						<div class="line">
 				<div class="text">Вид страхования</div>
-								
-								
-						
-					
-											
-					
-								
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
 																	<div class="selectfield">
 							<select class="cusel1" id="form_dropdown_TYPE_INSH" name="form_dropdown_TYPE_INSH">
-													<option value="4881">ОСАГО</option>							
+													<option value="4881">ОСАГО</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-																		<option value="4882">КАСКО</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4882">КАСКО</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-																		<option value="4883">Имущество</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4883">Имущество</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-																		<option value="4884">Жизнь и здоровье</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4884">Жизнь и здоровье</option>
 													</select>
 						</div>
 												<div class="Clear"></div>
-						
-					
-										
+
+
+
 												</div>
 									<div class="line">
-						Напомнить об окончании полиса по SMS  
+						Напомнить об окончании полиса по SMS
 					<div class="Clear"></div>
 				</div>
-						
+
 						<div class="line">
 				<div class="text">Телефон</div>
-								
-								
-						
-					
+
+
+
+
 																<div class="textfield5">+7</div>
-						<div class="textfield4">	
+						<div class="textfield4">
 							<input name="phone_code_4885" type="text" class="code_input_gr_128" value>
 						</div>
-						<div class="textfield3">	
+						<div class="textfield3">
 							<input id="PHONE" name="form_text_4885" type="text" class="input_gr_128" value>
 						</div>
 										<div class="Clear"></div>
-											
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
 												</div>
-								
+
 						<div class="line">
 				<div class="text">Прислать напоминание за</div>
-								
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
 																	<div class="checkboxBlock">
 						<div class="item1">
 													<input class="input_gr_128" id="4886" type="checkbox" name="form_checkbox_CHECK_PHONE[]">
 							<label> 1 неделю</label><br>
-												
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 																		<input class="input_gr_128" id="4887" type="checkbox" name="form_checkbox_CHECK_PHONE[]">
 							<label> 2 недели</label><br>
-												
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 																		<input class="input_gr_128" id="4888" type="checkbox" name="form_checkbox_CHECK_PHONE[]">
 							<label> 1 месяц</label><br>
 												</div>
 						</div>
 						<div class="Clear"></div>
-												
-										
+
+
 												</div>
-								
+
 							<div class="line">
 						Напомнить об окончании полиса по электронной почте					<div class="Clear"></div>
 				</div>
 						<div class="line">
 				<div class="text">E-mail</div>
-								
-								
-						
-					
-											
-					
-								
-					
-										<div class="textfield1">	
+
+
+
+
+
+
+
+
+										<div class="textfield1">
 						<input id="EMAIL" name="form_email_4889" type="email" class="input_gr_128" value>
 					</div>
 					<div class="Clear"></div>
-						
-					
-						
-					
-										
+
+
+
+
+
 												</div>
-								
+
 						<div class="line">
 				<div class="text">Прислать напоминание за</div>
-								
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
 																	<div class="checkboxBlock">
 						<div class="item1">
 													<input class="input_gr_128" id="4890" type="checkbox" name="form_checkbox_CHECK_EMAIL[]">
 							<label> 1 неделю</label><br>
-												
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 																		<input class="input_gr_128" id="4891" type="checkbox" name="form_checkbox_CHECK_EMAIL[]">
 							<label> 2 недели</label><br>
-												
-										
-													
-								
-						
-					
-											
-					
-								
-					
-						
-					
-						
-					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 																		<input class="input_gr_128" id="4892" type="checkbox" name="form_checkbox_CHECK_EMAIL[]">
 							<label> 1 месяц</label><br>
 												</div>
 						</div>
 						<div class="Clear"></div>
-												
-										
+
+
 												</div>
-				
+
 		<div class="line">
 			<div class="text">Защита от автоматического заполнения</div>
 			<div class="Img"><img id="imgCaptcha_128" src="vtbins.ru_files/captcha0.jpg" width="180" height="40">	</div>
@@ -1318,18 +1311,18 @@ $("#form_date_4880").blur(function(){
 			</div>
 			<div class="Clear"></div>
 		</div>
-				
+
 		<div class="line">
 			<div class="text">&nbsp;</div>
 			<div class="btn"><a id="submitBtn_128" href="http://www.vtbins.ru/#">Отправить</a></div>
 			<div class="ajaxLoading"><img src="vtbins.ru_files/ajax_loa.gif"></div>
 			<div class="Clear"></div>
 		</div>
-		
-		</form>		
+
+		</form>
 	</div>
 	<div class="bg_b"></div>
-	
+
 	<div id="window_128" class="window1">
 		<div class="popup_window">
 			<div id="window_t_128" class="window_t"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clou.png" alt="Закрыть"></a></div>
@@ -1340,7 +1333,7 @@ $("#form_date_4880").blur(function(){
 			<div class="window_b"></div>
 		</div>
 	</div>
-	
+
 </div>
 <script>
 $(document).ready(function(){
@@ -1351,7 +1344,7 @@ $(document).ready(function(){
         if($this.val().length > 3){
             $this.val($this.val().substr(0, 3));
 		}
-    });	
+    });
 	$('#PHONE').keyup( function() {
         var $this = $(this);
 		$this.val($this.val().replace(/[^\d,]/g, ''));
@@ -1364,18 +1357,18 @@ $(document).ready(function(){
 	$("#window_t_128").click(function () {
 		$("#window_128").hide();
 		return false;
-	});	
-	
+	});
+
 	/*stylize select*/
 	cuSel({
 		changedEl: ".center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .selectfield select",
 		scrollArrows: false
 	});
-	
-	
+
+
 	/*close calendar*/
-	var close = function(hash) { 
-		//hash.w.fadeOut('2000',function(){ hash.o.remove(); }); 
+	var close = function(hash) {
+		//hash.w.fadeOut('2000',function(){ hash.o.remove(); });
 		hash.w.hide();
 		hash.o.remove();
 		if ($("#calendar_float_div").length) {
@@ -1392,20 +1385,20 @@ $(document).ready(function(){
 	/*modal window*/
 	$('.insuranceAlarmClock').jqm({
 		overlay: 50,
-		overlayClass: 'overlay', 
-		closeClass: 'btnClose', 
+		overlayClass: 'overlay',
+		closeClass: 'btnClose',
 		trigger: '#form_128',
 		onHide : close
 	});
-		
+
 	/*submit form*/
 	$("#submitBtn_128").click(function(){
 
 		$(".ajaxLoading").show();
-		
+
 		var request = "WEB_FORM_ID=128";
-		$(".input_gr_128").each(function(){	
-				obj = $(this);			
+		$(".input_gr_128").each(function(){
+				obj = $(this);
 
 				var arrPARAMS = obj.attr("name");
 				var type = obj.attr("type");
@@ -1417,7 +1410,7 @@ $(document).ready(function(){
 						} else {
 							arrVALUES = "";
 						}
-					break				
+					break
 					case "radio":
 						if (obj.attr("checked")){
 							arrVALUES = obj.attr("id");
@@ -1425,50 +1418,50 @@ $(document).ready(function(){
 							arrPARAMS = "";
 							arrVALUES = "";
 						}
-					break					
+					break
 					default:
 						if (obj.attr("id") == "PHONE") {
 							var arrVALUES = "8("+$('.code_input_gr_128').val()+")"+obj.val();
 						}else{
 							var arrVALUES = obj.val();
 						}
-						
+
 				}
 				if (arrPARAMS != ""){
 					request = request+'&'+arrPARAMS+'='+arrVALUES;
 				}
-		});	
-		
+		});
+
 		$(".cusel1").each(function(){
 			var idcusel1 = $(this).attr("id");
 			var obj = $("#"+idcusel1+" > input[type=hidden]");
 
 			var arrPARAMS = obj.attr("name");
 			var arrVALUES = obj.val();
-			
+
 			request = request+'&'+arrPARAMS+'='+arrVALUES;
-		});	
-		
+		});
+
 
 		//alert(request);
-		
+
 		$.ajax({
 			url: "/bitrix/components/vtb_ins/popup.form/templates/insurance_alarm_clock/check.php",
 			type: "POST",
 			data: request,
 			success: function(html) {
-					
+
 				if(html.length > 0){
-					
+
 					$(".ajaxLoading").hide();
-					
-					$(".messages_128").html(html);	
-					
-					
+
+					$(".messages_128").html(html);
+
+
 					if ($("#resultHidden_128").val()){
-							
+
 						$('.code_input_gr_128').attr("value","");
-						
+
 						$(".input_gr_128").each(function(){ // clear fields
 							obj = $(this);
 							var type = obj.attr("type");
@@ -1478,36 +1471,36 @@ $(document).ready(function(){
 									if (obj.attr("checked")){
 										obj.removeAttr("checked");
 									}
-								break			
+								break
 								default:
 									obj.attr("value","");
-									
-							}							
-						});	
+
+							}
+						});
 						$(".cusel1").each(function(){ // default select
 							var idcusel1 = $(this).attr("id");
 							var obj = $("#"+idcusel1+" > input[type=hidden]");
-							
+
 							$("#cusel-scroll-"+obj.attr("id")+" > span").removeClass("cuselActive");
 							$("#cusel-scroll-"+obj.attr("id")+" > span:first").addClass("cuselActive");
 							var curVal = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").attr("val");
 							var curText = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").html();
 							$("#"+idcusel1+" > div.cuselText").html(curText);
 							$("#"+idcusel1+" > input[type=hidden]").val(curVal);
-						});	
-						
+						});
+
 						if ($("#captchaHidden_128").val()){ // update captcha
 							$("#imgCaptcha_128").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_128").val());
 							$("#captcha_sid_128").val($("#captchaHidden_128").val());
 						}
-						
+
 						$(".messages_128").empty();
 						jQuery.scrollTo("#window_128");
 						$("#window_128").show();
-						
-					} else {	
-						jQuery.scrollTo($(".messages_128"));	
-										
+
+					} else {
+						jQuery.scrollTo($(".messages_128"));
+
 						if ($("#captchaHidden_128").val()){ // update captcha
 							$("#imgCaptcha_128").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_128").val());
 							$("#captcha_sid_128").val($("#captchaHidden_128").val());
@@ -1516,12 +1509,12 @@ $(document).ready(function(){
 				}
 			}
 		});
-		
+
 		return false;
-		
+
 	});
 });
-</script>						</div>						
+</script>						</div>
 					</div>
 					<div class="rCol">
 						<div class="item">
@@ -1533,256 +1526,256 @@ $(document).ready(function(){
 		<div class="btnClose"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clov.png" alt="Закрыть"></a></div>
 		<h1>Оформить заявку / заказать консультацию</h1>
 		<div class="messages messages_119"></div>
-		
-		<form name="toOrderConsultation" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="119">		
+
+		<form name="toOrderConsultation" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="119">
 					<div class="line">
 				<div class="text">Я хотел бы</div>
-								
-										
+
+
 																	<div class="radioBtns">
 												<div class="item1"><input id="4748" name="form_radio_I_WANT" type="radio" class="input_gr_119">
 						<label>Оформить заявку на страховой полис</label></div>
 											<div class="Clear"></div>
-						
-					
-								
-					
-						
-					
-						
-					
-										
-													
-										
+
+
+
+
+
+
+
+
+
+
+
 																	<div class="item1"><input id="4749" name="form_radio_I_WANT" type="radio" class="input_gr_119">
 						<label>Задать вопрос и получить консультацию по почте</label></div>
 											<div class="Clear"></div>
-						
-					
-								
-					
-						
-					
-						
-					
-										
-													
-										
+
+
+
+
+
+
+
+
+
+
+
 																	<div class="item1"><input id="4750" name="form_radio_I_WANT" type="radio" class="input_gr_119">
 						<label>Задать вопрос и получить обратный звонок от специалиста компании</label></div>
 												</div>
 											<div class="Clear"></div>
-						
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Ваше имя</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="SNP" name="form_text_4751" type="text" class="input_gr_119" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Ваша фамилия</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="FAM" name="form_text_7109" type="text" class="input_gr_119" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Ваш город</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="CITY" name="form_text_6940" type="text" class="input_gr_119" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Телефон</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="PHONE" name="form_text_4752" type="text" class="input_gr_119" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Удобное время для связи</div>
-								
-										
+
+
 																	<div class="radioBtns">
 												<div class="item1"><input id="4753" name="form_radio_TIME_COMM" type="radio" class="input_gr_119">
 						<label> В первой половине дня до 12-00</label></div>
 											<div class="Clear"></div>
-						
-					
-								
-					
-						
-					
-						
-					
-										
-													
-										
+
+
+
+
+
+
+
+
+
+
+
 																	<div class="item1"><input id="4754" name="form_radio_TIME_COMM" type="radio" class="input_gr_119">
 						<label> Во второй половине дня до 19-00</label></div>
 												</div>
 											<div class="Clear"></div>
-						
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Электронная почта</div>
-								
-										
-						
-					
-								
-					
-										<div class="textfield1">	
+
+
+
+
+
+
+										<div class="textfield1">
 						<input id="EMAIL" name="form_email_4757" type="email" class="input_gr_119" value>
 					</div>
 					<div class="Clear"></div>
-						
-					
-						
-					
-										
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Вид страхования</div>
-								
-										
-						
-					
-								
-					
-						
-					
+
+
+
+
+
+
+
+
 																	<div class="selectfield">
 							<select class="cusel1" id="form_dropdown_TYPE_INSH" name="form_dropdown_TYPE_INSH">
-													<option value="4758">Автострахование</option>							
+													<option value="4758">Автострахование</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4759">Жизнь и здоровье</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4759">Жизнь и здоровье</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4760">Путешествия</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4760">Путешествия</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4761">Имущество</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4761">Имущество</option>
 													</select>
 						</div>
 												<div class="Clear"></div>
-						
-					
-										
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Комментарии </div>
-								
-										
-						
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
+
+
 										<div class="form_input">
 						<textarea class="input_gr_119" rows="5" cols="40" name="form_textarea_4762" type="textarea" value></textarea>
 					</div>
 					<div class="Clear"></div>
 												</div>
-				
+
 		<div class="line">
 			<div class="text">Защита от автоматического заполнения</div>
 			<div class="Img"><img id="imgCaptcha_119" src="vtbins.ru_files/captcha1.jpg" width="180" height="40">	</div>
@@ -1797,18 +1790,18 @@ $(document).ready(function(){
 			</div>
 			<div class="Clear"></div>
 		</div>
-				
+
 		<div class="line">
 			<div class="text">&nbsp;</div>
 			<div class="btn"><a id="submitBtn_119" href="http://www.vtbins.ru/#">Оформить</a></div>
 			<div class="ajaxLoading"><img src="vtbins.ru_files/ajax_lob.gif"></div>
 			<div class="Clear"></div>
 		</div>
-		
-		</form>		
+
+		</form>
 	</div>
 	<div class="bg_b"></div>
-	
+
 	<div id="window_119" class="window1">
 		<div class="popup_window">
 			<div id="window_t_119" class="window_t"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clow.png" alt="Закрыть"></a></div>
@@ -1819,7 +1812,7 @@ $(document).ready(function(){
 			<div class="window_b"></div>
 		</div>
 	</div>
-	
+
 </div>
 <script>
 $(document).ready(function(){
@@ -1828,22 +1821,22 @@ $(document).ready(function(){
 	$("#window_t_119").click(function () {
 		$("#window_119").hide();
 		return false;
-	});	
-	
+	});
+
 	/*stylize select*/
 	cuSel({
 		changedEl: ".center .mainBlock3 .rCol .item .consult .form .line .selectfield select",
 		scrollArrows: false
 	});
-	
+
 	/*modal window*/
 	$('.consult').jqm({
 		overlay: 50,
-		overlayClass: 'overlay', 
-		closeClass: 'btnClose', 
+		overlayClass: 'overlay',
+		closeClass: 'btnClose',
 		trigger: '#form_119'
 	});
-	
+
 	/*workaround*/
 	var onVar = true;
 	$(".cusel1").click(function(){
@@ -1855,16 +1848,16 @@ $(document).ready(function(){
 			onVar = true;
 		}
 		$(".cusel-scroll-wrap").css("visibility", "visible");
-	});		
-	
+	});
+
 	/*submit form*/
 	$("#submitBtn_119").click(function(){
-	
+
 		$(".ajaxLoading").show();
-		
+
 		var request = "WEB_FORM_ID=119";
-		$(".input_gr_119").each(function(){	
-				obj = $(this);			
+		$(".input_gr_119").each(function(){
+				obj = $(this);
 				var arrPARAMS = obj.attr("name");
 				var type = obj.attr("type");
 
@@ -1875,7 +1868,7 @@ $(document).ready(function(){
 						} else {
 							arrVALUES = "";
 						}
-					break				
+					break
 					case "radio":
 						if (obj.attr("checked")){
 							arrVALUES = obj.attr("id");
@@ -1883,44 +1876,44 @@ $(document).ready(function(){
 							arrPARAMS = "";
 							arrVALUES = "";
 						}
-					break					
+					break
 					default:
 						var arrVALUES = obj.val();
 				}
 				if (arrPARAMS != ""){
 					request = request+'&'+arrPARAMS+'='+arrVALUES;
 				}
-		});	
-		
+		});
+
 		$(".cusel1").each(function(){
 			var idcusel1 = $(this).attr("id");
 			var obj = $("#"+idcusel1+" > input[type=hidden]");
 
 			var arrPARAMS = obj.attr("name");
 			var arrVALUES = obj.val();
-			
+
 			request = request+'&'+arrPARAMS+'='+arrVALUES;
-		});	
-		
+		});
+
 
 		//alert(request);
-		
+
 		$.ajax({
 			url: "/bitrix/components/vtb_ins/popup.form/templates/request/check.php",
 			type: "POST",
 			data: request,
 			success: function(html) {
-					
+
 				if(html.length > 0){
-					
+
 					$(".ajaxLoading").hide();
-					
-					$(".messages_119").html(html);	
-					
-					
+
+					$(".messages_119").html(html);
+
+
 					if ($("#resultHidden_119").val()){
-							
-						
+
+
 						$(".input_gr_119").each(function(){ // clear fields
 							obj = $(this);
 							var type = obj.attr("type");
@@ -1930,35 +1923,35 @@ $(document).ready(function(){
 									if (obj.attr("checked")){
 										obj.removeAttr("checked");
 									}
-								break			
+								break
 								default:
 									obj.attr("value","");
-							}							
-						});	
+							}
+						});
 						$(".cusel1").each(function(){ // default select
 							var idcusel1 = $(this).attr("id");
 							var obj = $("#"+idcusel1+" > input[type=hidden]");
-							
+
 							$("#cusel-scroll-"+obj.attr("id")+" > span").removeClass("cuselActive");
 							$("#cusel-scroll-"+obj.attr("id")+" > span:first").addClass("cuselActive");
 							var curVal = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").attr("val");
 							var curText = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").html();
 							$("#"+idcusel1+" > div.cuselText").html(curText);
 							$("#"+idcusel1+" > input[type=hidden]").val(curVal);
-						});	
-						
+						});
+
 						if ($("#captchaHidden_119").val()){ // update captcha
 							$("#imgCaptcha_119").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_119").val());
 							$("#captcha_sid_119").val($("#captchaHidden_119").val());
 						}
-						
+
 						$(".messages_119").empty();
 						jQuery.scrollTo("#window_119");
 						$("#window_119").show();
-						
-					} else {	
-						jQuery.scrollTo($(".messages_119"));	
-										
+
+					} else {
+						jQuery.scrollTo($(".messages_119"));
+
 						if ($("#captchaHidden_119").val()){ // update captcha
 							$("#imgCaptcha_119").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_119").val());
 							$("#captcha_sid_119").val($("#captchaHidden_119").val());
@@ -1967,9 +1960,9 @@ $(document).ready(function(){
 				}
 			}
 		});
-		
+
 		return false;
-		
+
 	});
 });
 </script>						</div>
@@ -1986,148 +1979,148 @@ $(document).ready(function(){
 	<div class="form">
 		<div class="btnClose"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clox.png" alt="Закрыть"></a></div>
 		<h1>Оставить отзыв</h1>
-		
+
 		<div class="line">Здесь Вы можете высказать свои пожелания по качеству клиентского сервиса, задать вопрос, а также оставить свой отзыв о работе компании.<br>
 Мы внимательно изучаем все получаемые обращения и не оставляем их без ответа.</div>
-		
+
 		<div class="messages messages_127"></div>
 
-		<form name="responseIns" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="127">		
+		<form name="responseIns" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="127">
 					<div class="line">
 				<div class="text">Я хотел бы</div>
-								
-										
-						
-					
-								
-					
-						
-					
+
+
+
+
+
+
+
+
 																	<div class="selectfield">
 							<select class="cusel1" id="3" name="form_dropdown_I_WANT">
-													<option value="4871">Поблагодарить</option>							
+													<option value="4871">Поблагодарить</option>
 												<div class="Clear"></div>
-						
-					
-										
-										
-								
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4872">Предложить</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4872">Предложить</option>
 												<div class="Clear"></div>
-						
-					
-										
-										
-								
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4873">Пожаловаться</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4873">Пожаловаться</option>
 												<div class="Clear"></div>
-						
-					
-										
-										
-								
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4874">Спросить</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4874">Спросить</option>
 												<div class="Clear"></div>
-						
-					
-										
-										
-								
-										
-						
-					
-								
-					
-						
-					
-																		<option value="4875">Другое</option>							
+
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="4875">Другое</option>
 													</select>
 						</div>
 												<div class="Clear"></div>
-						
-					
-										
-										
+
+
+
+
 							</div>
 					<div class="line">
 				<div class="text">Как к вам обратиться?</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="SNP" name="form_text_4876" type="text" class="input_gr_127" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
-										
+
+
+
+
+
+
+
+
 							</div>
 					<div class="line">
 				<div class="text">Электронная почта</div>
-								
-										
-						
-					
-								
-					
-										<div class="textfield1">	
+
+
+
+
+
+
+										<div class="textfield1">
 						<input id="EMAIL" name="form_email_4877" type="email" class="input_gr_127" value>
 					</div>
 					<div class="Clear"></div>
-						
-					
-						
-					
-										
-										
+
+
+
+
+
+
 							</div>
 					<div class="line">
 				<div class="text">Отзыв</div>
-								
-										
-						
-					
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
+
+
+
+
 										<div class="form_input">
 						<textarea class="input_gr_127" rows="5" cols="40" name="form_textarea_4878" type="textarea" value></textarea>
 					</div>
 					<div class="Clear"></div>
-										
+
 							</div>
-			
+
 		<div class="line">
 			<div class="text">Защита от автоматического заполнения</div>
 			<div class="Img"><img id="imgCaptcha_127" src="vtbins.ru_files/captcha2.jpg" width="180" height="40">	</div>
@@ -2142,18 +2135,18 @@ $(document).ready(function(){
 			</div>
 			<div class="Clear"></div>
 		</div>
-				
+
 		<div class="line">
 			<div class="text">&nbsp;</div>
 			<div class="btn"><a id="submitBtn_127" href="http://www.vtbins.ru/#">Отправить</a></div>
 			<div class="ajaxLoading"><img src="vtbins.ru_files/ajax_loc.gif"></div>
 			<div class="Clear"></div>
 		</div>
-		
-		</form>	
+
+		</form>
 	</div>
 	<div class="bg_b"></div>
-	
+
 	<div id="window_127" class="window1">
 		<div class="popup_window">
 			<div id="window_t_127" class="window_t"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_cloy.png" alt="Закрыть"></a></div>
@@ -2164,7 +2157,7 @@ $(document).ready(function(){
 			<div class="window_b"></div>
 		</div>
 	</div>
-	
+
 </div>
 <script>
 $(document).ready(function(){
@@ -2174,13 +2167,13 @@ $(document).ready(function(){
 		$("#window_127").hide();
 		return false;
 	});
-	
+
 	/*stylize select*/
 	cuSel({
 		changedEl: ".center .mainBlock3 .rCol .item .comment .form .line .selectfield select",
 		scrollArrows: false
 	});
-	
+
 	/*modal window*/
 	$('.comment').jqm({
 		overlay: 50,
@@ -2188,15 +2181,15 @@ $(document).ready(function(){
 		closeClass: 'btnClose',
 		trigger: '#form_127'
 	});
-		
+
 	/*submit form*/
 	$("#submitBtn_127").click(function(){
-	
+
 		$(".ajaxLoading").show();
-		
+
 		var request = "WEB_FORM_ID=127";
-		$(".input_gr_127").each(function(){	
-				obj = $(this);			
+		$(".input_gr_127").each(function(){
+				obj = $(this);
 				var arrPARAMS = obj.attr("name");
 				var type = obj.attr("type");
 
@@ -2207,7 +2200,7 @@ $(document).ready(function(){
 						} else {
 							arrVALUES = "";
 						}
-					break				
+					break
 					case "radio":
 						if (obj.attr("checked")){
 							arrVALUES = obj.attr("id");
@@ -2215,44 +2208,44 @@ $(document).ready(function(){
 							arrPARAMS = "";
 							arrVALUES = "";
 						}
-					break					
+					break
 					default:
 						var arrVALUES = obj.val();
 				}
 				if (arrPARAMS != ""){
 					request = request+'&'+arrPARAMS+'='+arrVALUES;
 				}
-		});	
-		
+		});
+
 		$(".cusel1").each(function(){
 			var idcusel1 = $(this).attr("id");
 			var obj = $("#"+idcusel1+" > input[type=hidden]");
 
 			var arrPARAMS = obj.attr("name");
 			var arrVALUES = obj.val();
-			
+
 			request = request+'&'+arrPARAMS+'='+arrVALUES;
-		});	
-		
+		});
+
 
 		//alert(request);
-		
+
 		$.ajax({
 			url: "/bitrix/components/vtb_ins/popup.form/templates/form/check.php",
 			type: "POST",
 			data: request,
 			success: function(html) {
-					
+
 				if(html.length > 0){
-					
+
 					$(".ajaxLoading").hide();
-					
-					$(".messages_127").html(html);	
-					
-					
+
+					$(".messages_127").html(html);
+
+
 					if ($("#resultHidden_127").val()){
-							
-						
+
+
 						$(".input_gr_127").each(function(){ // clear fields
 							obj = $(this);
 							var type = obj.attr("type");
@@ -2262,35 +2255,35 @@ $(document).ready(function(){
 									if (obj.attr("checked")){
 										obj.removeAttr("checked");
 									}
-								break			
+								break
 								default:
 									obj.attr("value","");
-							}							
-						});	
+							}
+						});
 						$(".cusel1").each(function(){ // default select
 							var idcusel1 = $(this).attr("id");
 							var obj = $("#"+idcusel1+" > input[type=hidden]");
-							
+
 							$("#cusel-scroll-"+obj.attr("id")+" > span").removeClass("cuselActive");
 							$("#cusel-scroll-"+obj.attr("id")+" > span:first").addClass("cuselActive");
 							var curVal = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").attr("val");
 							var curText = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").html();
 							$("#"+idcusel1+" > div.cuselText").html(curText);
 							$("#"+idcusel1+" > input[type=hidden]").val(curVal);
-						});	
-						
+						});
+
 						if ($("#captchaHidden_127").val()){ // update captcha
 							$("#imgCaptcha_127").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_127").val());
 							$("#captcha_sid_127").val($("#captchaHidden_127").val());
 						}
-						
+
 						$(".messages_127").empty();
 						jQuery.scrollTo("#window_127");
 						$("#window_127").show();
-						
-					} else {	
-						jQuery.scrollTo($(".messages_127"));	
-										
+
+					} else {
+						jQuery.scrollTo($(".messages_127"));
+
 						if ($("#captchaHidden_127").val()){ // update captcha
 							$("#imgCaptcha_127").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_127").val());
 							$("#captcha_sid_127").val($("#captchaHidden_127").val());
@@ -2299,9 +2292,9 @@ $(document).ready(function(){
 				}
 			}
 		});
-		
+
 		return false;
-		
+
 	});
 });
 </script>							</div>
@@ -2314,140 +2307,140 @@ $(document).ready(function(){
 		<div class="btnClose"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_cloz.png" alt="Закрыть"></a></div>
 		<h1>Оформить заявку / заказать консультацию</h1>
 		<div class="messages messages_192"></div>
-		
-		<form name="vtbins_param_popup_form" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="192">		
+
+		<form name="vtbins_param_popup_form" action="http://www.vtbins.ru/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="05c1d6de377f4d555550a52b0680bc02"><input type="hidden" name="WEB_FORM_ID" value="192">
 					<div class="line">
 				<div class="text">Как к вам обратиться?</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="how" name="form_text_6943" type="text" class="input_gr_192" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Ваш город</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="city" name="form_text_6944" type="text" class="input_gr_192" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Телефон</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="phone" name="form_text_6945" type="text" class="input_gr_192" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Электронная почта</div>
-								
-										
-						
-					
-										<div class="textfield1">	
+
+
+
+
+										<div class="textfield1">
 						<input id="email" name="form_text_6946" type="text" class="input_gr_192" value>
 					</div>
 					<div class="Clear"></div>
-								
-					
-						
-					
-						
-					
-										
+
+
+
+
+
+
+
 												</div>
 					<div class="line">
 				<div class="text">Вид страхования</div>
-								
-										
-						
-					
-								
-					
-						
-					
+
+
+
+
+
+
+
+
 																	<div class="selectfield">
 							<select class="cusel1" id="form_dropdown_insurance" name="form_dropdown_insurance">
-													<option value="6947">Автострахование</option>							
+													<option value="6947">Автострахование</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="6948">Жизнь и здоровье</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="6948">Жизнь и здоровье</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="6949">Путешествия</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="6949">Путешествия</option>
 												<div class="Clear"></div>
-						
-					
-										
-													
-										
-						
-					
-								
-					
-						
-					
-																		<option value="6950">Имущество</option>							
+
+
+
+
+
+
+
+
+
+
+
+																		<option value="6950">Имущество</option>
 													</select>
 						</div>
 												<div class="Clear"></div>
-						
-					
-										
+
+
+
 												</div>
-				
+
 		<div class="line">
 			<div class="text">Защита от автоматического заполнения</div>
 			<div class="Img"><img id="imgCaptcha_192" src="vtbins.ru_files/captcha3.jpg" width="180" height="40">	</div>
@@ -2462,18 +2455,18 @@ $(document).ready(function(){
 			</div>
 			<div class="Clear"></div>
 		</div>
-				
+
 		<div class="line">
 			<div class="text">&nbsp;</div>
 			<div class="btn"><a id="submitBtn_192" href="http://www.vtbins.ru/#">Оформить</a></div>
 			<div class="ajaxLoading"><img src="vtbins.ru_files/ajax_lod.gif"></div>
 			<div class="Clear"></div>
 		</div>
-		
-		</form>		
+
+		</form>
 	</div>
 	<div class="bg_b"></div>
-	
+
 	<div id="window_192" class="window1">
 		<div class="popup_window">
 			<div id="window_t_192" class="window_t"><a href="http://www.vtbins.ru/#" title="Закрыть"><img src="vtbins.ru_files/btn_clp0.png" alt="Закрыть"></a></div>
@@ -2484,7 +2477,7 @@ $(document).ready(function(){
 			<div class="window_b"></div>
 		</div>
 	</div>
-	
+
 </div>
 <script>
 $(document).ready(function(){
@@ -2493,22 +2486,22 @@ $(document).ready(function(){
 	$("#window_t_192").click(function () {
 		$("#window_192").hide();
 		return false;
-	});	
-	
+	});
+
 	/*stylize select*/
 	cuSel({
 		changedEl: ".center .mainBlock3 .rCol .item .hiddenform .form .line .selectfield select",
 		scrollArrows: false
 	});
-	
+
 	/*modal window*/
 	$('.hiddenform').jqm({
 		overlay: 50,
-		overlayClass: 'overlay', 
-		closeClass: 'btnClose', 
+		overlayClass: 'overlay',
+		closeClass: 'btnClose',
 		trigger: '#form_192'
 	});
-	
+
 	/*workaround*/
 	var onVar = true;
 	$(".cusel1").click(function(){
@@ -2520,16 +2513,16 @@ $(document).ready(function(){
 			onVar = true;
 		}
 		$(".cusel-scroll-wrap").css("visibility", "visible");
-	});		
-	
+	});
+
 	/*submit form*/
 	$("#submitBtn_192").click(function(){
-	
+
 		$(".ajaxLoading").show();
-		
+
 		var request = "WEB_FORM_ID=192";
-		$(".input_gr_192").each(function(){	
-				obj = $(this);			
+		$(".input_gr_192").each(function(){
+				obj = $(this);
 				var arrPARAMS = obj.attr("name");
 				var type = obj.attr("type");
 
@@ -2540,7 +2533,7 @@ $(document).ready(function(){
 						} else {
 							arrVALUES = "";
 						}
-					break				
+					break
 					case "radio":
 						if (obj.attr("checked")){
 							arrVALUES = obj.attr("id");
@@ -2548,44 +2541,44 @@ $(document).ready(function(){
 							arrPARAMS = "";
 							arrVALUES = "";
 						}
-					break					
+					break
 					default:
 						var arrVALUES = obj.val();
 				}
 				if (arrPARAMS != ""){
 					request = request+'&'+arrPARAMS+'='+arrVALUES;
 				}
-		});	
-		
+		});
+
 		$(".cusel1").each(function(){
 			var idcusel1 = $(this).attr("id");
 			var obj = $("#"+idcusel1+" > input[type=hidden]");
 
 			var arrPARAMS = obj.attr("name");
 			var arrVALUES = obj.val();
-			
+
 			request = request+'&'+arrPARAMS+'='+arrVALUES;
-		});	
-		
+		});
+
 
 		//alert(request);
-		
+
 		$.ajax({
 			url: "/bitrix/components/vtb_ins/popup.form/templates/form_hidden/check.php",
 			type: "POST",
 			data: request,
 			success: function(html) {
-					
+
 				if(html.length > 0){
-					
+
 					$(".ajaxLoading").hide();
-					
-					$(".messages_192").html(html);	
-					
-					
+
+					$(".messages_192").html(html);
+
+
 					if ($("#resultHidden_192").val()){
-							
-						
+
+
 						$(".input_gr_192").each(function(){ // clear fields
 							obj = $(this);
 							var type = obj.attr("type");
@@ -2595,35 +2588,35 @@ $(document).ready(function(){
 									if (obj.attr("checked")){
 										obj.removeAttr("checked");
 									}
-								break			
+								break
 								default:
 									obj.attr("value","");
-							}							
-						});	
+							}
+						});
 						$(".cusel1").each(function(){ // default select
 							var idcusel1 = $(this).attr("id");
 							var obj = $("#"+idcusel1+" > input[type=hidden]");
-							
+
 							$("#cusel-scroll-"+obj.attr("id")+" > span").removeClass("cuselActive");
 							$("#cusel-scroll-"+obj.attr("id")+" > span:first").addClass("cuselActive");
 							var curVal = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").attr("val");
 							var curText = $("#cusel-scroll-"+obj.attr("id")+" > span.cuselActive").html();
 							$("#"+idcusel1+" > div.cuselText").html(curText);
 							$("#"+idcusel1+" > input[type=hidden]").val(curVal);
-						});	
-						
+						});
+
 						if ($("#captchaHidden_192").val()){ // update captcha
 							$("#imgCaptcha_192").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_192").val());
 							$("#captcha_sid_192").val($("#captchaHidden_192").val());
 						}
-						
+
 						$(".messages_192").empty();
 						jQuery.scrollTo("#window_192");
 						$("#window_192").show();
-						
-					} else {	
-						jQuery.scrollTo($(".messages_192"));	
-										
+
+					} else {
+						jQuery.scrollTo($(".messages_192"));
+
 						if ($("#captchaHidden_192").val()){ // update captcha
 							$("#imgCaptcha_192").attr("src","/bitrix/tools/captcha.php?captcha_sid="+$("#captchaHidden_192").val());
 							$("#captcha_sid_192").val($("#captchaHidden_192").val());
@@ -2632,13 +2625,13 @@ $(document).ready(function(){
 				}
 			}
 		});
-		
+
 		return false;
-		
+
 	});
-	
-	
-	
+
+
+
 	function getQueryParams(qs) {
 		qs = qs.split("+").join(" ");
 		var params = {},
@@ -2652,7 +2645,7 @@ $(document).ready(function(){
 
 		return params;
 	}
-	
+
 	var $get = getQueryParams(document.location.search);
 	if ($get["request"] == 'y')
 		$("#form_192").click();
@@ -2685,7 +2678,7 @@ $(function() {
 		<div class="arrows">
 			<a id="prevFact" onclick="javascript:return false" href="http://www.vtbins.ru/#" title="#">
 				<img src="vtbins.ru_files/l_arrow0.png" alt="">
-			</a> 
+			</a>
 			<a id="follFact" onclick="javascript:return false" href="http://www.vtbins.ru/#" title="#">
 				<img src="vtbins.ru_files/r_arrow0.png" alt="">
 			</a>
@@ -2775,7 +2768,7 @@ $(function() {
 					<a href="http://www.vtbins.ru/interesting/">В Германии существует страховка от потери паспорта</a>
 				</span>
 			</div>
-						
+
 								<div class="socialNetworkBlock">
 										<div class="vkontakte">
 						<script type="text/javascript" src="vtbins.ru_files/openapi0.js"></script>
@@ -2792,8 +2785,8 @@ $(function() {
 								VK.Widgets.Like(
 									"vk_like_ins",
 									{
-										type: "mini", 
-										pageImage: "http://www.vtbins.ru/bitrix/components/vtb_ins/interesting.facts/templates/.default/images/logo.png", 
+										type: "mini",
+										pageImage: "http://www.vtbins.ru/bitrix/components/vtb_ins/interesting.facts/templates/.default/images/logo.png",
 										pageUrl: "http://www.vtbins.ru/interesting/"
 									}
 								);
@@ -2806,10 +2799,10 @@ $(function() {
 					</div>
 
 					<div class="ficebook">
-						<fb:like href="http://www.vtbins.ru/interesting/" show_faces="true" layout="button_count" width="130px" action="recommend"></fb:like>		
+						<fb:like href="http://www.vtbins.ru/interesting/" show_faces="true" layout="button_count" width="130px" action="recommend"></fb:like>
 													<script language="JavaScript" src="vtbins.ru_files/all00000.js"></script>
-							<script src="vtbins.ru_files/all00000.js"></script>		
-							
+							<script src="vtbins.ru_files/all00000.js"></script>
+
 					</div>
 				</div>
 			</div>
@@ -2818,14 +2811,14 @@ $(function() {
 	</div></noindex>
 	<div class="conteiner">
 		<div class="bottom">
-			<div class="block">	
+			<div class="block">
 	<noindex><div class="social">
 					<a href="https://vk.com/vtbinsurance" target="_blank"><img src="vtbins.ru_files/vk000000.png"></a>
 					<a href="https://www.facebook.com/vtbins" target="_blank"><img src="vtbins.ru_files/fb000000.png"></a>
 					<a href="https://twitter.com/vtbins" target="_blank"><img src="vtbins.ru_files/twttr000.png"></a>
 					<a href="https://ru.foursquare.com/vtbins" target="_blank"><img src="vtbins.ru_files/4sq00000.png"></a>
 					<a href="https://instagram.com/vtbins/" target="_blank"><img src="vtbins.ru_files/instagra.png"></a>
-	</div></noindex>				
+	</div></noindex>
 					<div class="menu">
 		<ul>
 						<li>
@@ -2846,15 +2839,15 @@ $(function() {
 							</ul>
 		<div class="Clear"></div>
 	</div>
-    	
- 
+
+
 				<p>© ВТБ, 2013</p>
 				<noindex><p>Создание сайта – <a target="_blank" rel="nofollow" href="http://articul.ru/">Articul Media</a></p></noindex>
 			</div>
 		</div>
 	</div>
-	<!-- 20110503_1440 (start) --> 
- 
+	<!-- 20110503_1440 (start) -->
+
 
 	<!--  AdRiver code START. Type:counter(zeropixel) Site: vtbins PZ: 0 BN: 0 -->
 	<script language="javascript" type="text/javascript"><!--
@@ -2864,8 +2857,8 @@ $(function() {
 	//--></script>
 	<noscript><img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=172885&amp;bt=21&amp;pz=0&amp;rnd=1136659676" border="0" width="1" height="1"></noscript>
 	<!--  AdRiver code END  -->
-	
- 
+
+
 <!-- Yandex.Metrika counter -->
 
 <script type="text/javascript">
@@ -2892,25 +2885,25 @@ $(function() {
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/4647940" style="position:absolute; left:-9999px;" alt></div></noscript>
 <!-- /Yandex.Metrika counter -->
- 
-<script type="text/javascript"> 
- 
+
+<script type="text/javascript">
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-21551161-1']);
   _gaq.push(['_trackPageview']);
 
   _gaq.push(['SecondTracker._setAccount', 'UA-22189281-9']);
   _gaq.push(['SecondTracker._trackPageview']);
- 
+
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
- 
-</script> 
- 
-<!-- 20110310_1207 (finish) -->	
+
+</script>
+
+<!-- 20110310_1207 (finish) -->
 
 <div class="chat">
 	<script type="text/javascript">
@@ -2918,7 +2911,7 @@ $(function() {
 			$('.btnChat').click(function(e) {
 				e.preventDefault();
 				$(this).parent().find('.chatPopup').animate({'width': 'toggle'});
-				
+
 			});
 			function checkChk(elem){
 				if($(elem).is(':checked')){
@@ -2991,7 +2984,7 @@ $(function() {
 		<div class="popup_b"></div>
 	</div>
 </div>
- 
+
 </body>
 </html>
 <!-- This document saved from http://www.vtbins.ru/ -->
