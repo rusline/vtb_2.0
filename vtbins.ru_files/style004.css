@@ -1,0 +1,22 @@
+.do_you_know  .invisible_fact {
+	display:none;
+}
+.arrows a {
+	text-decoration: none;
+}
+.socialNetworkBlock {
+	margin: 10px 0px 0px 260px;
+	height: 22px;
+}
+.socialNetworkBlock .vkontakte {
+	float: left;
+	position: relative;
+}
+.socialNetworkBlock .twitter {
+	float: left;
+	position: relative;
+}
+.socialNetworkBlock .ficebook {
+	float: left;
+	position: relative;
+}

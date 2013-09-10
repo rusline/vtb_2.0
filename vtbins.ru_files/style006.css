@@ -1,0 +1,562 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin: 0; padding: 0;}
+*:focus {outline: none;}
+body  {font:12px Arial, Helvetica, sans-serif; color:#000000; background-color:#ffffff;}
+ul {list-style:none;}
+img {border:none; vertical-align:top;}
+a {color:#2378ac;}
+
+h1 {font:36px 'MetaNormalCyrLFRomanRegular'; color:#000000;}
+h2 {font:24px 'MetaNormalCyrLFRomanRegular'; color:#000000;}
+h3 {font:18px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
+
+.overlay {background-color: #000;}
+
+.conteiner {min-width:1000px; max-width:1400px; margin:0 auto;}
+.Clear {clear:both; font-size:1px; line-height:0px; height:0px;}
+.Clear_l {clear:left; font-size:1px; line-height:0px; height:0px;}
+
+.tl {background:url(tl000000.png) no-repeat; width:5px; height:5px; overflow:hidden; position:absolute; top:0; left:0;}
+.tr {background:url(tr000000.png) no-repeat; width:5px; height:5px; overflow:hidden; position:absolute; top:0; right:0;}
+.bl {background:url(bl000000.png) no-repeat; width:5px; height:5px; overflow:hidden; position:absolute; bottom:0; left:0;}
+.br {background:url(br000000.png) no-repeat; width:5px; height:5px; overflow:hidden; position:absolute; bottom:0; right:0;}
+
+.tl1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/tl1.png) no-repeat; width:10px; height:10px; overflow:hidden; position:absolute; top:0; left:0;}
+.tr1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/tr1.png) no-repeat; width:10px; height:10px; overflow:hidden; position:absolute; top:0; right:0;}
+.bl1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bl1.png) no-repeat; width:10px; height:10px; overflow:hidden; position:absolute; bottom:0; left:0;}
+.br1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/br1.png) no-repeat; width:10px; height:10px; overflow:hidden; position:absolute; bottom:0; right:0;}
+
+/*head*/
+.head {padding:0 20px; position:relative; z-index:100;}
+
+.head .logo {background:url(logo0000.png) no-repeat; width:282px; height:69px; position:absolute; bottom:-45px; right:25px;}
+.head .logo a {display:block; height:69px;}
+
+.head .block1 {width:100%; padding-top:10px; font-size:13px;}
+.head .block1 .left {width:350px; float:left;}
+.head .block1 .left .search {width:246px; float:right;}
+.head .block1 .left .search .textfield {background:url(textfiel.png) no-repeat; padding:6px 8px 0 8px; width:184px; height:24px; float:left;}
+.head .block1 .left .search .textfield input {width:184px; font:13px Arial, Helvetica, sans-serif; color:#b8b8b8; background:none; border:0;}
+.head .block1 .left .search .btn {background:url(btn_sear.png) no-repeat; width:40px; height:30px; border:0; cursor:pointer; float:right;}
+.head .block1 .left .txt1 {padding-top:6px;}
+
+.head .block1 .right {width:580px; float:right;}
+.head .block1 .right .cityBlock {width:165px; padding:5px 10px 0 0; float:left; text-align:right; position:relative; z-index:10;}
+.head .block1 .right .cityBlock a {text-decoration:none; border-bottom:1px dashed #2378ac; position:relative;}
+
+.head .block1 .right .cityBlock .cityList {width:646px; position:absolute; left:-50px; top:30px; display:none;}
+.head .block1 .right .cityBlock .cityList .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_t.png) no-repeat; width:646px; height:15px;}
+.head .block1 .right .cityBlock .cityList .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_b.png) no-repeat; width:646px; height:20px;}
+.head .block1 .right .cityBlock .cityList .list {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1.png) repeat-y; padding:0 7px 0 4px; width:635px; text-align:left;}
+.head .block1 .right .cityBlock .cityList .list h1 {font:18px 'MetaMediumCyrLF-RomanRegular'; padding:0 45px;}
+.head .block1 .right .cityBlock .cityList .list .btnClose {text-align:right; padding-right:15px;}
+.head .block1 .right .cityBlock .cityList .list .btnClose a {border:0;}
+.head .block1 .right .cityBlock .cityList .list ul {padding:30px 0 30px 30px; width:180px; float:left;}
+.head .block1 .right .cityBlock .cityList .list li {padding:0 0 5px 15px; position:relative;}
+.head .block1 .right .cityBlock .cityList .list li strong {color:#a1a1a1; position:absolute; left:0; top:0;}
+.head .block1 .right .cityBlock .cityList .list li a {border:0; text-decoration:underline;}
+
+.head .block1 .right .txt1 {width:135px; padding:5px 10px 0 0; float:left; text-align:right;}
+.head .block1 .right .phones {width:220px; height:60px; padding-left:40px; float:left; position:relative;}
+.head .block1 .right .phones p {font:18px 'MetaMediumCyr-CapsRegular';}
+.head .block1 .right .phones span {font-size:10px; color:#949494;}
+.head .block1 .right .phones .over {width:210px; height:60px; overflow:hidden;}
+.head .block1 .right .phones li {height:60px; width:210px;}
+.head .block1 .right .phones .navigate {width:8px; height:60px; position:absolute; top:0; right:0;}
+.head .block1 .right .phones .navigate .item {padding-top:3px; height:11px; overflow:hidden; cursor:pointer;}
+
+.head .mainMenu {width:100%; padding-bottom:25px; font:22px 'MetaMediumCyrLF-RomanRegular';}
+.head .mainMenu li {padding-right:55px; float:left;}
+/*head*/
+
+/*center*/
+.center {width:100%; background:url(c_bg1000.png) repeat-x; min-width:1000px; overflow:hidden;}
+
+.center .mainBlock {background:url(c_bg2000.jpg) center 0 no-repeat; min-width:1000px;} /*+_snow*/
+
+.center .lCol {width:46%; padding-left:20px; float:left;}
+.center .rCol {width:49%; padding-right:20px; float:right;}
+
+.center .mainBlock1 {width:100%;}
+.center .mainBlock1 .imgBlock {height:330px; padding:68px 10px 0 10px;}
+.center .mainBlock1 .imgBlock .img_bg {background:url(main_img.jpg) no-repeat; width:100%; height:330px;}
+.center .mainBlock1 .imgBlock .img_bgr {background:url(main_imh.jpg) right 0 no-repeat; width:100%; height:330px; position:relative;}
+
+.center .mainBlock1 .imgBlock .imgBlock1 img {position:absolute; top:0;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img1 {left:1%; z-index:2;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img2 {left:30%; margin-left:-70px; z-index:1;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img3 {right:30%; margin-right:-70px; z-index:2;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img4 {right:1%; z-index:1;}
+
+.center .mainBlock1 .menuBlock {width:100%; min-width:1000px; height:72px;} 
+.center .mainBlock1 .menuBlock .menu {padding:0 20px; font:20px 'MetaMediumCyrLF-RomanRegular';}
+.center .mainBlock1 .menuBlock .menu table {width:100%; border-collapse:collapse;}
+.center .mainBlock1 .menuBlock .menu td {height:72px; width:25%; text-align:center;position:relative;}
+.center .mainBlock1 .menuBlock .menu a {color:#2378ac;}
+
+.center .mainBlock2 {width:100%; padding-top:40px;}
+.center .mainBlock2 h1 {font:18px 'MetaMediumCyrLF-RomanRegular';}
+.center .mainBlock2 .lCol .block1 {width:40%; padding-right:3%; float:left;}
+.center .mainBlock2 .lCol .block1 .warning {background:url(warning_.png) no-repeat; padding-left:50px;}
+.center .mainBlock2 .lCol .block1 .warning ul {padding-top:15px; font-size:13px;}
+.center .mainBlock2 .lCol .block1 .warning li {padding-top:5px;}
+.center .mainBlock2 .lCol .block2 {width:55%; float:left;}
+.center .mainBlock2 .lCol .block2 .form {width:100%;}
+.center .mainBlock2 .lCol .block2 .form h1 {margin-bottom:15px;}
+.center .mainBlock2 .lCol .block2 .form .selectfield {padding-top:15px; position:relative;}
+.center .mainBlock2 .lCol .block2 .form .selectfield select {width:240px;}
+.center .mainBlock2 .lCol .block2 .form .select1 {z-index:2;}
+.center .mainBlock2 .lCol .block2 .form .select2 {z-index:1;}
+.center .mainBlock2 .lCol .block2 .form .btn {background:url(btn_calc.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer; margin-top:15px;}
+
+.center .mainBlock2 .rCol .newsList {width:100%;}
+.center .mainBlock2 .rCol .newsList ul {padding:15px 0 3px 0;}
+.center .mainBlock2 .rCol .newsList li {padding-bottom:7px;}
+.center .mainBlock2 .rCol .newsList li span {color:#595959; padding-right:10px;}
+
+/*banners*/
+.center .mainBlock2 .rCol .bannerBlock {width:488px; height:103px; padding-top:25px; position:relative;}
+.center .mainBlock2 .rCol .bannerBlock .navigate {width:8px; height:103px; position:absolute; top:25px; right:-14px;}
+.center .mainBlock2 .rCol .bannerBlock .navigate .item {padding-top:3px; height:11px; overflow:hidden; background: url(bullet10.png) no-repeat scroll 0 0 transparent; cursor:pointer;}
+.center .mainBlock2 .rCol .banner {background:url(banner_b.jpg) no-repeat; width:474px; height:90px; padding:6px 7px 6px 7px; position:absolute; overflow:hidden;}
+.center .mainBlock2 .rCol .banner .bannerAnimate {height: 89px; width: 474px; overflow: hidden; position: absolute;}
+.center .mainBlock2 .rCol .banner .Img {height: 90px; width: 474px; overflow: hidden; position: absolute;}
+/*banners*/
+
+.center .mainBlock3 {width:100%; padding:25px 0 35px 0; font-size:14px;}
+.center .mainBlock3 h1 {font:18px 'MetaMediumCyrLF-RomanRegular'; padding:0 20px; margin-bottom:10px;}
+.center .mainBlock3 .lCol a {margin-right:10px; white-space:nowrap;}
+
+.center .mainBlock3 .rCol .item {padding-right:30px; float:left;}
+.center .mainBlock3 .rCol .item a {text-decoration:none; border-bottom:1px dashed #2378ac; position:relative;}
+
+/*forms*/
+.center .mainBlock3 .rCol .item .comment {width:646px; top:485px; position:absolute; left:50%; margin-left:-323px; bottom:0; display:none;}
+.center .mainBlock3 .rCol .item .comment .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_t.png) no-repeat; width:646px; height:15px;}
+.center .mainBlock3 .rCol .item .comment .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_b.png) no-repeat; width:646px; height:20px;}
+.center .mainBlock3 .rCol .item .comment .btnClose {text-align:right; padding-right:15px;}
+.center .mainBlock3 .rCol .item .comment .btnClose a {border:0;}
+.center .mainBlock3 .rCol .item .comment .form {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1.png) repeat-y; padding:0 7px 0 4px; width:635px; /*height:515px;*/ text-align:left; font-size:14px;}
+.center .mainBlock3 .rCol .item .comment .form h1 {font:22px 'MetaMediumCyrLF-RomanRegular'; padding:0 45px; margin-bottom:20px;}
+.center .mainBlock3 .rCol .item .comment .form .line {width:560px; padding:0 0 10px 45px;}
+.center .mainBlock3 .rCol .item .comment .form .line .text {width:195px; padding:6px 10px 0 0; float:left; color:#595959;}
+.center .mainBlock3 .rCol .item .comment .form .line .textfield1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield2.png) no-repeat; width:260px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .textfield1 input {width:260px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .comment .form .line .textfield2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield3.png) no-repeat; width:140px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .textfield2 input {width:140px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield3 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/phone_field.png) no-repeat; width:175px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield3 input {width:170px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield4 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/phone_code_field.png) no-repeat; width:50px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield4 input {width:40px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield5 {width:15px; height:24px; padding:6px 10px 0 0; float:left;}
+
+.center .mainBlock3 .rCol .item .comment .form .line .textarea {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textarea1.png) no-repeat; width:330px; height:174px; padding:6px 10px 0 10px; float:left; margin-bottom:20px;}
+.center .mainBlock3 .rCol .item .comment .form .line .textarea textarea {width:330px; height:168px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .comment .form .line .checkboxBlock {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .checkboxBlock .item1 {width:230px; padding:5px 10px 5px 0; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .selectfield {width:280px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .selectfield select {width:280px;}
+.center .mainBlock3 .rCol .item .comment .form .line .Img {width:180px; height:40px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .btn {width:150px; padding-top:10px; float:left;}
+.center .mainBlock3 .rCol .item .comment .form .line .btn input {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_send.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer;}
+.center .mainBlock3 .rCol .item .comment .form .line .btn {width:130px; height:21px; padding:10px; text-align:center;	background: url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_blue.jpg) repeat-x; border-radius:3px; margin-top:20px }
+.center .mainBlock3 .rCol .item .comment .form .line .btn a {color: #fff; font-size: 18px;	border-bottom: medium none; text-decoration: none;}
+.center .mainBlock3 .rCol .item .comment .form .messages {padding: 0 0 20px 45px;}
+
+.center .mainBlock3 .lCol .item {float:left; padding-right:30px;}
+.center .mainBlock3 .lCol .item span a {border-bottom:1px dashed #2378AC; position:relative; text-decoration:none;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock {width:896px; top:210px; position:absolute; left:50%; bottom:0; margin-left:-448px; display:none;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2_t.png) no-repeat; width:896px; height:15px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2_b.png) no-repeat; width:896px; height:20px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .btnClose {text-align:right; padding-right:15px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .btnClose a {border:0;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2.png) repeat-y; padding:0 7px 0 4px; width:885px; text-align:left; font-size:14px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form h1 {font:22px 'MetaMediumCyrLF-RomanRegular'; padding:0 45px; margin-bottom:25px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line {width:815px; padding:0 0 12px 45px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line label {font:12px Arial, Helvetica, sans-serif; color:#595959; padding-left:5px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .text {width:195px; padding:6px 10px 0 0; float:left; color:#595959;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .radioBtns {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .radioBtns .item1 {width:480px; padding-top:5px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield2.png) no-repeat; width:260px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield1 input {width:260px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .datefield {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/datefield.png) no-repeat; width:260px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .datefield input {width:200px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield3.png) no-repeat; width:140px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textfield2 input {width:140px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textarea {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textarea2.png) no-repeat; width:590px; height:94px; padding:6px 10px 0 10px; float:left; margin-bottom:20px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .textarea textarea {width:590px; height:94px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .checkboxBlock {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .checkboxBlock .item1 {width:230px; padding:5px 10px 5px 0; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .selectfield {width:280px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .selectfield select {width:280px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .Img {width:180px; height:40px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .btn {width:150px; padding-top:10px; float:left;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .btn input {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_request.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .btn {width:130px; height:21px; padding:10px; text-align:center;	background: url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_blue.jpg) repeat-x; border-radius:3px; margin-top:20px }
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .line .btn a {color: #fff; font-size: 18px;	border-bottom: medium none; text-decoration: none;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .form .messages {padding: 0 0 20px 45px;}
+
+.center .mainBlock3 .rCol .item .consult {width:896px; top:210px; position:absolute; left:50%; bottom:0; margin-left:-448px; display:none;}
+.center .mainBlock3 .rCol .item .consult .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2_t.png) no-repeat; width:896px; height:15px;}
+.center .mainBlock3 .rCol .item .consult .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2_b.png) no-repeat; width:896px; height:20px;}
+.center .mainBlock3 .rCol .item .consult .btnClose {text-align:right; padding-right:15px;}
+.center .mainBlock3 .rCol .item .consult .btnClose a {border:0;}
+.center .mainBlock3 .rCol .item .consult .form {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg2.png) repeat-y; padding:0 7px 0 4px; width:885px; text-align:left; font-size:14px;}
+.center .mainBlock3 .rCol .item .consult .form h1 {font:22px 'MetaMediumCyrLF-RomanRegular'; padding:0 45px; margin-bottom:25px;}
+.center .mainBlock3 .rCol .item .consult .form .line {width:815px; padding:0 0 12px 45px;}
+.center .mainBlock3 .rCol .item .consult .form .line label {font:12px Arial, Helvetica, sans-serif; color:#595959; padding-left:5px;}
+.center .mainBlock3 .rCol .item .consult .form .line .text {width:195px; padding:6px 10px 0 0; float:left; color:#595959;}
+.center .mainBlock3 .rCol .item .consult .form .line .radioBtns {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .radioBtns .item1 {width:480px; padding-top:5px;}
+.center .mainBlock3 .rCol .item .consult .form .line .textfield1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield2.png) no-repeat; width:260px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .textfield1 input {width:260px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .consult .form .line .textfield2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield3.png) no-repeat; width:140px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .textfield2 input {width:140px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .consult .form .line .textarea {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textarea2.png) no-repeat; width:590px; height:94px; padding:6px 10px 0 10px; float:left; margin-bottom:20px;}
+.center .mainBlock3 .rCol .item .consult .form .line .textarea textarea {width:590px; height:94px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .consult .form .line .checkboxBlock {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .checkboxBlock .item1 {width:230px; padding:5px 10px 5px 0; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .selectfield {width:280px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .selectfield select {width:280px;}
+.center .mainBlock3 .rCol .item .consult .form .line .Img {width:180px; height:40px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .btn {width:150px; padding-top:10px; float:left;}
+.center .mainBlock3 .rCol .item .consult .form .line .btn input {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_request.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer;}
+.center .mainBlock3 .rCol .item .consult .form .line .btn {width:130px; height:21px; padding:10px; text-align:center;	background: url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_blue.jpg) repeat-x; border-radius:3px; margin-top:20px }
+.center .mainBlock3 .rCol .item .consult .form .line .btn a {color: #fff; font-size: 18px;	border-bottom: medium none; text-decoration: none;}
+.center .mainBlock3 .rCol .item .consult .form .messages {padding: 0 0 20px 45px;}
+/*forms*/
+
+.center .do_you_know {padding:15px 20px; background-color:#e6f4ee; font:16px 'MetaNormalCyrLFRomanRegular'; position:relative;}
+.center .do_you_know .txt1 {color:#485f59; width:200px; float:left;}
+.center .do_you_know .arrows {width:60px; padding-top:3px; float:left;}
+.center .do_you_know .txt2 {margin-left:260px;}
+
+.center .inside {width:100%; padding:45px 0 35px 0; position:relative; z-index:50;}
+.center .inside .left {width:250px; padding-left:10px; float:left;}
+
+.center .inside .left .menu {width:250px; position:relative;}
+.center .inside .left .menu_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/l_menu_bg1_t.png) no-repeat; width:250px; height:20px;}
+.center .inside .left .menu_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/l_menu_bg1_b.png) no-repeat; width:250px; height:20px;}
+.center .inside .left .menu .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/l_menu_bg1.png) repeat-y; width:210px; padding:0 20px;}
+.center .inside .left .menu h3 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bullet2.png) right center no-repeat;}
+.center .inside .left .menu h3 a {text-decoration:none; border-bottom:1px dashed #2378ac; position:relative;}
+.center .inside .left .menu .drop_down_block {width:236px; position:absolute; top:10px; left:8px; display:none;}
+.center .inside .left .menu .drop_down_block .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg3_t.png) no-repeat; width:236px; height:15px;}
+.center .inside .left .menu .drop_down_block .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg3_b.png) no-repeat; width:236px; height:20px;}
+.center .inside .left .menu .drop_down_block .list {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg3.png) repeat-y; width:205px; padding:10px 16px 10px 15px;}
+.center .inside .left .menu .drop_down_block li {padding-bottom:5px; font:16px 'MetaMediumCyrLF-RomanRegular'; color:#2378ac;}
+.center .inside .left .menu .drop_down_block li a {font:16px 'MetaNormalCyrLFRomanRegular';}
+.center .inside .left .menu .drop_down_block li a:hover {color:#122c6f;}
+.center .inside .left .menu .drop_down_block .active {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bullet2_1.png) right 5px no-repeat; padding-right:15px; width:190px;}
+
+.center .inside .left .block1 {width:250px; padding-top:35px;}
+.center .inside .left .block1 ul {padding:0 20px;}
+.center .inside .left .block1 li {padding-bottom:15px; font:14px 'MetaNormalCyrLFRomanRegular';}
+.center .inside .left .block1 li a:hover {color:#122c6f;}
+.center .inside .left .block1 li .active {color:#000000;}
+
+.center .inside .left .block2 {width:250px; padding-top:15px;}
+.center .inside .left .block2 .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4_t.png) no-repeat; width:250px; height:15px;}
+.center .inside .left .block2 .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4_b.png) no-repeat; width:250px; height:15px;}
+.center .inside .left .block2 .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4.png) repeat-y; width:200px; padding:10px 25px;}
+
+.center .inside .left .block2 .warning {background:url(warning_.png) no-repeat; padding-left:50px;}
+.center .inside .left .block2 .warning ul {padding-top:10px; font-size:13px;}
+.center .inside .left .block2 .warning li {padding-top:7px;}
+
+.center .inside .left .block2 .form {width:200px;}
+.center .inside .left .block2 .form h3 {margin-bottom:5px;}
+.center .inside .left .block2 .form .selectfield {padding-top:15px; position:relative;}
+.center .inside .left .block2 .form .selectfield select {width:200px;}
+.center .inside .left .block2 .form .select1 {z-index:2;}
+.center .inside .left .block2 .form .select2 {z-index:1;}
+.center .inside .left .block2 .form .btn {background:url(btn_calc.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer; margin-top:15px;}
+
+.center .inside .left .block3 {width:250px; padding-top:15px;}
+.center .inside .left .block3 .Img {width:250px; position:relative;}
+
+.center .inside .right {width:260px; float:right; padding-top:670px; position:relative;}
+
+.center .mainImg1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/main_img1.png) no-repeat; width:790px; height:588px; position:absolute; top:45px; left:0;}
+.center .mainImg2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/main_img2.png) no-repeat; width:744px; height:546px; position:absolute; top:45px; left:0;}
+
+.center .inside .right .block1 {width:260px; padding-top:15px;}
+.center .inside .right .block1 .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4_t.png) no-repeat; width:260px; height:15px;}
+.center .inside .right .block1 .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4_b.png) no-repeat; width:260px; height:15px;}
+.center .inside .right .block1 .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg4.png) repeat-y; width:210px; padding:10px 25px;}
+.center .inside .right .block1 .con li {padding-bottom:5px; font-size:13px;}
+.center .inside .right .block1 .con h3 {margin-bottom:10px;}
+.center .inside .right .block1 .con .dct {width:210px;}
+.center .inside .right .block1 .con .dct .Img {width:20px; padding:0 10px 7px 0; float:left;}
+.center .inside .right .block1 .con .dct .txt {width:180px; padding-bottom:7px; float:left;}
+.center .inside .right .block1 .con .dct .txt p {font-size:11px; color:#949494; margin-top:3px;}
+
+.center .inside .right .block2 {width:260px; padding-top:15px;}
+.center .inside .right .block2 ul {width:210px; padding:10px 25px;}
+.center .inside .right .block2 li {padding-bottom:5px; font-size:13px;}
+
+.center .inside .content {margin:0 275px 0 275px;}
+.center .inside .content .navigation {font-size:11px; color:#949494; padding:30px 0 50px 0;}
+.center .inside .content .navigation span {color:#2378ac;}
+
+.center .inside .content .textBlock {font-size:13px; color:#3c3c3c;}
+.center .inside .content .textBlock h1 {margin-bottom:40px;}
+.center .inside .content .textBlock h2 {margin-bottom:25px;}
+.center .inside .content .textBlock h3 {margin-bottom:20px;}
+.center .inside .content .textBlock p {margin-bottom:12px;}
+.center .inside .content .textBlock ul {padding:0 0 10px 20px;}
+.center .inside .content .textBlock ul li {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bullet3.gif) 0 7px no-repeat; padding:0 0 2px 20px;}
+.center .inside .content .textBlock ol {padding:0 0 10px 40px;}
+.center .inside .content .textBlock ol li {padding-bottom:2px;}
+.center .inside .content .textBlock blockquote {padding:10px 20px 15px 20px; font-size:15px; color:#2378ac; font-style:italic;}
+.center .inside .content .textBlock blockquote span {font-size:12px; color:#858585;}
+.center .inside .content .textBlock .txt1 {padding:10px 20px; font:18px 'MetaNormalCyrLFRomanRegular'; color:#2378ac;}
+.center .inside .content .textBlock .table {padding:20px 0;}
+.center .inside .content .textBlock .table table {width:100%; border-collapse:collapse; border-bottom:1px solid #2378ac;}
+.center .inside .content .textBlock .table table th {padding:6px 10px; font-weight:normal; text-align:left; color:#949494; vertical-align:top;}
+.center .inside .content .textBlock .table table td {padding:6px 10px; border-top:1px dotted #b4cee6; vertical-align:top;}
+.center .inside .content .textBlock .table table td span {white-space:nowrap;}
+.center .inside .content .textBlock .table table .no_border td {border:0;}
+.center .inside .content .textBlock .table table .Img {padding:0 15px;}
+
+.center .inside .content .printVersion {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/ico_print.png) no-repeat; padding:3px 0 3px 38px; font-size:11px; font-style:italic;}
+
+.center .inside .calculator {width:100%; padding-top:30px;}
+.center .inside .calculator .formBlock {width:100%; padding-bottom:25px; margin-bottom:15px; border-bottom:1px dotted #b4cee6;}
+.center .inside .calculator .formBlock.last {border-bottom:1px solid #2378ac;}
+.center .inside .calculator .formBlock table {width:100%; border-collapse:collapse;}
+.center .inside .calculator .formBlock th {padding:20px 0 0 10px; font-size:11px; color:#3c3c3c; text-align:left; font-weight:normal;}
+.center .inside .calculator .formBlock td {padding:15px 10px 0 0; vertical-align:top;}
+.center .inside .calculator .formBlock a {text-decoration:none; border-bottom:1px dashed #2378ac;}
+.center .inside .calculator .formBlock .col1 {width:30%; padding-top:18px;}
+.center .inside .calculator .formBlock .col2 {width:40%; padding-top:18px;}
+.center .inside .calculator .formBlock .text1 {font-size:12px; color:#949494; margin:10px 0 0 0; font-style:italic;}
+.center .inside .calculator .formBlock .text2 {font-size:11px; color:#949494; margin:-20px 0 0 0; font-style:italic;}
+.center .inside .calculator .formBlock .item1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/item_bg1.png) no-repeat; width:100px; height:26px; padding:10px 4px 0 4px; text-align:center; font-size:14px; color:#111111;}
+.center .inside .calculator .formBlock .del {font-size:12px; vertical-align:middle;}
+.center .inside .calculator .formBlock .del a {color:#949494; border-bottom:1px dashed #949494;}
+.center .inside .calculator .formBlock .add {padding-top:20px;}
+.center .inside .calculator .formBlock .add img {margin:2px 3px 0 0;}
+.center .inside .calculator .formBlock .add a {font-size:12px;}
+.center .inside .calculator .formBlock .selectfield1 {width:240px; color:#000000;}
+.center .inside .calculator .formBlock .selectfield2 {width:110px; color:#000000;}
+.center .inside .calculator .formBlock .selectfield3 {width:100px; color:#000000;}
+.center .inside .calculator .formBlock .selectfield4 {width:360px; color:#000000;}
+.center .inside .calculator .formBlock .selectfield5 {width:120px; color:#000000;}
+.center .inside .calculator .formBlock .selectfield6 {width:150px; color:#000000; float:left; margin-right:5px;}
+.center .inside .calculator .formBlock .selectfield7 {width:80px; color:#000000; float:left;}
+.center .inside .calculator .formBlock .textfield1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield4.png) no-repeat; width:90px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .inside .calculator .formBlock .textfield1 input {width:90px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .inside .calculator .formBlock .textfield2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield5.png) no-repeat; width:100px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .inside .calculator .formBlock .textfield2 input {width:100px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .inside .calculator .formBlock .radioBtns {padding-top:5px;}
+.center .inside .calculator .formBlock .radioBtns input {margin-bottom:5px;}
+.center .inside .calculator .formBlock .sliderBlock {margin-left:115px;}
+.center .inside .calculator .formBlock .sliderBlock th {text-align:left; font-weight:normal; padding:0; font-size:10px;}
+.center .inside .calculator .formBlock .sliderBlock th span {padding-left:5px;}
+.center .inside .calculator .formBlock .sliderBlock th.al_r {text-align:right;}
+.center .inside .calculator .formBlock .sliderBlock th.al_r span {margin-right:-15px;}
+.center .inside .calculator .formBlock .sliderBlock td {font-size:10px; padding:0 0 0 10px; white-space:nowrap;}
+.center .inside .calculator .formBlock .sliderBlock .sliderLine {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/slider_bg.gif) 19px center no-repeat; width:90%;}
+.center .inside .calculator .formBlock .sliderBlock .sliderLine .bg_r {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/slider_bgr.gif) right center no-repeat; padding-right:10px;}
+.center .inside .calculator .formBlock .sliderBlock .slider {height:25px; position:relative;}
+.center .inside .calculator .formBlock .sliderBlock .slider a {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/slider_bullet.png) no-repeat; width:19px; height:25px; position:absolute; left:0; top:1px; border:0;}
+.center .inside .calculator .formBlock .select1 {position:relative; z-index:5;}
+.center .inside .calculator .formBlock .select2 {position:relative; z-index:4;}
+.center .inside .calculator .formBlock .select3 {position:relative; z-index:3;}
+.center .inside .calculator .formBlock .select4 {position:relative; z-index:2;}
+
+.center .inside .calculator .total {width:100%; padding-top:20px; font-size:24px; color:#3c3c3c;}
+.center .inside .calculator .total span {font-size:18px; color:#949494;}
+.center .inside .calculator .total .cost {font-size:36px; color:#2378ac;}
+
+.center .inside .calculator .btn {width:100%; padding:40px 0;}
+.center .inside .calculator .btn input {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_order.png) no-repeat; width:220px; height:41px; border:0; cursor:pointer;}
+
+.center .inside .pravlenie {width:100%; float:left;}
+.center .inside .pravlenie .item {width:33%; float:left; padding-bottom:30px;}
+.center .inside .pravlenie .item .Img {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/img_bg1.png) no-repeat; width:132px; height:176px; padding:5px 7px 5px 6px;}
+.center .inside .pravlenie .item .txt {padding:5px 0 0 0; width:145px;}
+.center .inside .pravlenie .item a {font-size:15px; text-decoration:none;}
+.center .inside .pravlenie .item p {margin:5px 0 0 0; font-size:12px;}
+
+.center .inside .nagradi {width:100%; float:left;}
+.center .inside .nagradi .item {width:100%; border-bottom:1px dotted #b4cee6; padding-bottom:20px; margin-bottom:20px;}
+.center .inside .nagradi .item .imgBlock {width:180px; float:left;}
+.center .inside .nagradi .item .imgBlock .Img1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/img_bg2.png) no-repeat; width:170px; height:120px; padding:5px;}
+.center .inside .nagradi .item .imgBlock .Img2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/img_bg3.png) no-repeat; width:120px; height:170px; padding:5px;}
+.center .inside .nagradi .item .txt {margin-left:200px; font-size:12px; line-height:18px; padding-top:2px;}
+
+.center .inside .content .filials {width:100%; color:#3c3c3c;}
+.center .inside .content .filials h1 {margin-bottom:40px;}
+
+.center .inside .content .filials .header {width:100%; padding-bottom:30px; float:left;}
+.center .inside .content .filials .header .item {width:100px; height:26px; padding:10px 4px 0 4px; text-align:center; font-size:14px; color:#111111; float:left;}
+.center .inside .content .filials .header .item a {text-decoration:none; border-bottom:1px dashed #2378ac;}
+.center .inside .content .filials .header .item.active {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/item_bg1.png) no-repeat;}
+
+.center .inside .content .filials .list {width:100%; padding-bottom:10px;}
+.center .inside .content .filials .list h3 {font:18px 'MetaNormalCyrLFRomanRegular';}
+.center .inside .content .filials .list h3 a {text-decoration:none; border-bottom:1px dashed #2378ac;}
+.center .inside .content .filials .list h3 a.active {color:#000000; border-bottom:1px dashed #000000;}
+.center .inside .content .filials .list ul {padding:20px 0 15px 0;}
+.center .inside .content .filials .list li {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bullet4.gif) 0 7px no-repeat; padding:0 0 20px 20px;}
+.center .inside .content .filials .list li span {font-size:14px; color:#000000;}
+.center .inside .content .filials .list li .item {padding-bottom:5px;}
+
+.center .inside .content .filials .selectCity {width:100%; padding-bottom:5px; border-top:1px dotted #b4cee6; padding-top:20px; margin-top:15px;}
+.center .inside .content .filials .selectCity h3 {font:18px 'MetaNormalCyrLFRomanRegular'; margin-bottom:15px;}
+.center .inside .content .filials .selectCity .selectfield {width:250px; color:#000000;}
+
+.center .inside .content .presscentr {width:100%; font-size:13px; color:#3c3c3c; float:left;}
+.center .inside .content .presscentr h1 {margin-bottom:35px;}
+.center .inside .content .presscentr .date {font-size:11px; color:#949494;}
+
+.center .inside .content .presscentr .selectDate {width:100%; padding-bottom:10px; border-bottom:1px solid #2378ac;}
+.center .inside .content .presscentr .selectDate .item {float:left; padding-right:10px;}
+.center .inside .content .presscentr .selectDate .item span {display:block; padding:6px 6px 0 0; float:left;}
+.center .inside .content .presscentr .selectDate .item .Img {float:left; padding:7px 0 0 6px;}
+.center .inside .content .presscentr .selectDate .textfield {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield4.png) no-repeat; width:90px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .inside .content .presscentr .selectDate .textfield input {width:90px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .inside .content .presscentr .selectDate .btn {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_show.png) no-repeat; width:110px; height:30px; border:0; cursor:pointer; float:left;}
+.center .inside .content .presscentr .selectDate .rssBlock {float:right; padding-top:7px;}
+.center .inside .content .presscentr .newsList {width:100%;}
+.center .inside .content .presscentr .newsList ul {padding:35px 0 40px 0;}
+.center .inside .content .presscentr .newsList li {padding-bottom:12px;}
+.center .inside .content .presscentr .newsList li span {font-size:11px; color:#949494;}
+.center .inside .content .presscentr .newsList li p {margin:3px 0;}
+
+.center .inside .content .presscentr .fullnews {width:100%;}
+.center .inside .content .presscentr .fullnews p {margin-bottom:12px;}
+.center .inside .content .presscentr .fullnews blockquote {padding-left:30px; font-style:italic;}
+.center .inside .content .presscentr .fullnews .block {width:100%; border-bottom:1px dotted #b4cee6; padding-bottom:35px;}
+.center .inside .content .presscentr .fullnews .back {font-size:11px; color:#2378ac; padding-top:20px;}
+
+.center .pagesBlock {width:100%; border-top:1px dotted #b4cee6; padding-top:15px;}
+.center .pagesBlock span {font-size:11px; color:#2378ac;}
+
+.center .inside .content1 {margin:0 280px 0 20px;}
+.center .inside .content1 .navigation {font-size:11px; color:#949494; padding:30px 0 50px 0;}
+.center .inside .content1 .navigation span {color:#2378ac;}
+
+.center .inside .content1 .searchBlock {width:100%;}
+.center .inside .content1 .searchBlock h1 {margin-bottom:30px;}
+.center .inside .content1 .searchBlock .search {width:100%; padding-bottom:40px;}
+.center .inside .content1 .searchBlock .search .textfield {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield6.png) no-repeat; padding:6px 20px 0 10px; width:500px; height:24px; float:left;}
+.center .inside .content1 .searchBlock .search .textfield input {width:500px; font:13px Arial, Helvetica, sans-serif; color:#b8b8b8; background:none; border:0;}
+.center .inside .content1 .searchBlock .search .btn {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_search1.png) no-repeat; width:110px; height:30px; border:0; cursor:pointer; float:left;}
+.center .inside .content1 .searchBlock .not_found_txt {font-size:18px; line-height:24px; color:#3c3c3c;}
+
+.center .inside .content1 .searchBlock .searchList {width:100%;}
+.center .inside .content1 .searchBlock .searchList h3 {font:18px Arial, Helvetica, sans-serif; color:#3c3c3c; margin-bottom:10px;}
+.center .inside .content1 .searchBlock .searchList .sort {font-size:14px; color:#949494; width:100%; padding-bottom:35px;}
+.center .inside .content1 .searchBlock .searchList .sort a {text-decoration:none; border-bottom:1px dashed #2378ac;}
+.center .inside .content1 .searchBlock .searchList .sort .txt {padding:9px 5px 0 0; float:left;}
+.center .inside .content1 .searchBlock .searchList .sort .item1 div {width:100px; height:27px; padding:9px 4px 0 4px; text-align:center; color:#111111; float:left;}
+.center .inside .content1 .searchBlock .searchList .sort .item1 .active {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/item_bg1.png) no-repeat;}
+.center .inside .content1 .searchBlock .searchList .sort .item2 div {width:170px; height:27px; padding:9px 4px 0 4px; text-align:center; color:#111111; float:left;}
+.center .inside .content1 .searchBlock .searchList .sort .item2 .active {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/item_bg2.png) no-repeat;}
+
+.center .inside .content1 .searchBlock .searchList ul {padding:40px 0 5px 0;}
+.center .inside .content1 .searchBlock .searchList li {padding-bottom:25px; font-size:13px; color:#3c3c3c;}
+.center .inside .content1 .searchBlock .searchList li span {font-size:11px; color:#949494;}
+
+.center .inside .content1 .page404 {width:100%; font-size:13px;}
+.center .inside .content1 .page404 h1 {margin:0 0 10px 0;}
+.center .inside .content1 .page404 .searchBlock {padding-top:40px;}
+.center .inside .content1 .page404 .searchBlock h3 {margin-bottom:10px;}
+.center .inside .content1 .page404 .txt {border-top:1px dotted #b4cee6; padding-top:15px;}
+/*center*/
+
+/*bottom*/
+.bottom {padding:30px 20px; background: url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/bottom_bg.jpg) no-repeat scroll center 0 transparent;} /*+_snow*/
+.bottom .block {width:100%;}
+.bottom .block a {text-decoration:none;}
+.bottom .block .menu {width:49%; float:right; text-align:center;}
+.bottom .block .menu ul {padding-top:10px;}
+.bottom .block .menu li {display:inline; padding:0 1%;}
+.bottom .block .menu a {color:#000000; text-decoration:underline;}
+.bottom .block .menu .lng a {color:#075eab;}
+/*bottom*/
+
+/*popup_window*/
+.center .mainBlock3 .rCol .item .consult .ajaxLoading {display:none; left:5px; position:relative; top:15px;}
+.center .mainBlock3 .rCol .item .consult .window1 {width:640px; position:absolute; left:135px; top:455px; display:none; z-index:3000;}
+.center .mainBlock3 .rCol .item .consult .center .mainBlock3 .rCol .item .popup_window a {border:0;}
+.center .mainBlock3 .rCol .item .consult .popup_window {width:640px;}
+.center .mainBlock3 .rCol .item .consult .popup_window .window_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_t.png) no-repeat; width:575px; height:25px; padding:50px 65px 0 0; text-align:right;}
+.center .mainBlock3 .rCol .item .consult .popup_window .window_t a {border-bottom:medium none;}
+.center .mainBlock3 .rCol .item .consult .popup_window .window_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_b.png) no-repeat; width:640px; height:75px;}
+.center .mainBlock3 .rCol .item .consult .popup_window .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5.png) repeat-y; width:520px; padding:0 65px 20px 55px; text-align:center; font-size:13px; color:#595959;}
+.center .mainBlock3 .rCol .item .consult .popup_window .con h1 {font:30px 'MetaMediumCyrLF-RomanRegular'; margin-bottom:10px;}
+
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .ajaxLoading {display:none; left:5px; position:relative; top:15px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .window1 {width:640px; position:absolute; left:135px; top:455px; display:none; z-index:3000;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .center .mainBlock3 .lCol .item .popup_window a {border:0;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window {width:640px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window .window_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_t.png) no-repeat; width:575px; height:25px; padding:50px 65px 0 0; text-align:right;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window .window_t a {border-bottom:medium none;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window .window_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_b.png) no-repeat; width:640px; height:75px;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5.png) repeat-y; width:520px; padding:0 65px 20px 55px; text-align:center; font-size:13px; color:#595959;}
+.center .mainBlock3 .lCol .item .insuranceAlarmClock .popup_window .con h1 {font:30px 'MetaMediumCyrLF-RomanRegular'; margin-bottom:10px;}
+
+.center .mainBlock3 .rCol .item .comment .ajaxLoading {display:none; left:5px; position:relative; top:15px;}
+.center .mainBlock3 .rCol .item .comment .window1 {width:640px; position:absolute; left:5px; top:220px; display:none; z-index:3000;}
+.center .mainBlock3 .rCol .item .comment .center .mainBlock3 .rCol .item .popup_window a {border:0;}
+.center .mainBlock3 .rCol .item .comment .popup_window {width:640px;}
+.center .mainBlock3 .rCol .item .comment .popup_window .window_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_t.png) no-repeat; width:575px; height:25px; padding:50px 65px 0 0; text-align:right;}
+.center .mainBlock3 .rCol .item .comment .popup_window .window_t a {border-bottom:medium none;}
+.center .mainBlock3 .rCol .item .comment .popup_window .window_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_b.png) no-repeat; width:640px; height:75px;}
+.center .mainBlock3 .rCol .item .comment .popup_window .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5.png) repeat-y; width:520px; padding:0 65px 20px 55px; text-align:center; font-size:13px; color:#595959;}
+.center .mainBlock3 .rCol .item .comment .popup_window .con h1 {font:30px 'MetaMediumCyrLF-RomanRegular'; margin-bottom:10px;}
+/*popup_window*/
+
+.center .mainBlock3 .rCol .item .hiddenform {width:646px; top:100; position:absolute; left:50%; margin-left:-323px; bottom:0; display:none;}
+.center .mainBlock3 .rCol .item .hiddenform .bg_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_t.png) no-repeat; width:646px; height:15px;}
+.center .mainBlock3 .rCol .item .hiddenform .bg_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1_b.png) no-repeat; width:646px; height:20px;}
+.center .mainBlock3 .rCol .item .hiddenform .btnClose {text-align:right; padding-right:15px;}
+.center .mainBlock3 .rCol .item .hiddenform .btnClose a {border:0;}
+.center .mainBlock3 .rCol .item .hiddenform .form {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg1.png) repeat-y; padding:0 7px 0 4px; width:635px; /*height:515px;*/ text-align:left; font-size:14px;}
+.center .mainBlock3 .rCol .item .hiddenform .form h1 {font:22px 'MetaMediumCyrLF-RomanRegular'; padding:0 45px; margin-bottom:20px;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line {width:560px; padding:0 0 10px 45px;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .text {width:195px; padding:6px 10px 0 0; float:left; color:#595959;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textfield1 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield2.png) no-repeat; width:260px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textfield1 input {width:260px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textfield2 {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textfield3.png) no-repeat; width:140px; height:24px; padding:6px 10px 0 10px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textfield2 input {width:140px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textarea {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/textarea1.png) no-repeat; width:330px; height:174px; padding:6px 10px 0 10px; float:left; margin-bottom:20px;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .textarea textarea {width:330px; height:168px; background:none; border:0; font:14px Arial, Helvetica, sans-serif; color:#000000;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .checkboxBlock {width:480px; padding-bottom:10px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .checkboxBlock .item1 {width:230px; padding:5px 10px 5px 0; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .selectfield {width:280px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .selectfield select {width:280px;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .Img {width:180px; height:40px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .btn {width:150px; padding-top:10px; float:left;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .btn input {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_send.png) no-repeat; width:150px; height:41px; border:0; cursor:pointer;}
+.center .mainBlock3 .rCol .item .hiddenform .form .line .btn {width:130px; height:21px; padding:10px; text-align:center;	background: url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/btn_blue.jpg) repeat-x; border-radius:3px; margin-top:20px }
+.center .mainBlock3 .rCol .item .hiddenform .form .line .btn a {color: #fff; font-size: 18px;	border-bottom: medium none; text-decoration: none;}
+.center .mainBlock3 .rCol .item .hiddenform .form .messages {padding: 0 0 20px 45px;}
+
+.center .mainBlock3 .rCol .item .hiddenform .ajaxLoading {display:none; left:5px; position:relative; top:15px;}
+.center .mainBlock3 .rCol .item .hiddenform .window1 {width:640px; position:absolute; left:5px; top:220px; display:none; z-index:3000;}
+.center .mainBlock3 .rCol .item .hiddenform .center .mainBlock3 .rCol .item .popup_window a {border:0;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window {width:640px;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window .window_t {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_t.png) no-repeat; width:575px; height:25px; padding:50px 65px 0 0; text-align:right;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window .window_t a {border-bottom:medium none;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window .window_b {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5_b.png) no-repeat; width:640px; height:75px;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window .con {background:url(http://www.vtbins.ru/bitrix/templates/index_vtbins/images/block_bg5.png) repeat-y; width:520px; padding:0 65px 20px 55px; text-align:center; font-size:13px; color:#595959;}
+.center .mainBlock3 .rCol .item .hiddenform .popup_window .con h1 {font:30px 'MetaMediumCyrLF-RomanRegular'; margin-bottom:10px;}
+
+/**/
+.social {float: right;}
+body {padding-bottom: 10px;}
+
+.head .block1 .left {
+width: 420px !important;
+}
+.head .block1 .left .txt1 a {
+padding-right: 25px;
+}

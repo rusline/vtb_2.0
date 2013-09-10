@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'MetaMediumCyrLF-RomanRegular';
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrl-webfont.eot');
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrl-webfont.eot?') format('embedded-opentype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrl-webfont.woff') format('woff'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrl-webfont.ttf') format('truetype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrl-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MetaNormalCyrLFRomanRegular';
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcynorl-webfont.eot');
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcynorl-webfont.eot?') format('embedded-opentype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcynorl-webfont.woff') format('woff'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcynorl-webfont.ttf') format('truetype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcynorl-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MetaMediumCyr-CapsRegular';
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrs-webfont.eot');
+    src: url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrs-webfont.eot?') format('embedded-opentype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrs-webfont.woff') format('woff'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrs-webfont.ttf') format('truetype'),
+         url('http://www.vtbins.ru/bitrix/templates/index_vtbins/fonts/mtcymdrs-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

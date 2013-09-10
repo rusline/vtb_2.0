@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+.callback {padding-top:10px; position:relative;}
+
+.btnCallback {
+	background: linear-gradient(to bottom, #EE6E7B 0%, #F1372B 100%) repeat scroll 0 0 transparent;
+    color: #FFFFFF !important;
+    display:inline-block;
+    font: 14px 'MetaMediumCyrLF-RomanRegular';
+    padding: 3px 7px;
+    text-decoration: none;
+	border-radius: 4px;
+}
+
+.callback .callbackPopup {background:url(../images/popup_bg.png) no-repeat; width:369px; padding:34px 36px 0 31px; position:absolute; top:77px; left:-15px; z-index:100; text-align:left; font:14px 'MetaNormalCyrLFRomanRegular'; color:#000000; display:none;}
+.callback .popup_b {background:url(../images/popup_b.png) no-repeat; width:434px; height:50px; position:absolute; left:0; bottom:-50px;}
+.callback .callbackPopup h2 {font-family:'MetaMediumCyrLF-RomanRegular'; color:#122c6f; text-align:center; margin-bottom:10px;}
+.callback .callbackPopup .text1 {font-size:13px; color:#7d7d7d; text-align:center; margin-bottom:10px;}
+.callback .callbackPopup .line {width:100%; padding-bottom:10px;}
+.callback .callbackPopup .line .lBlock {width:135px; float:left;}
+.callback .callbackPopup .line .rBlock {width:230px; float:right;}
+.callback .callbackPopup .line .textfield1 {background:url(../images/textfield7.png) no-repeat; width:200px; height:21px; padding:6px 10px 0 10px; float:left;}
+.callback .callbackPopup .line .textfield1 input {width:200px; background:none; border:0; font:12px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
+.callback .callbackPopup .line .text2 {clear:both; font-size:9px; padding-top:5px;}
+.callback .callbackPopup .line .text3 {display:block; position:relative;}
+.callback .callbackPopup .line .text3 span {position:absolute; top:0; right:0; color:#ff0000;}
+.callback .callbackPopup .line .text4 {display:block; position:relative;}
+.callback .callbackPopup .line .text4 span {position:absolute; top:5px; left:-15px; font-size:12px;}
+.callback .callbackPopup .line select {width:220px;}
+.callback .callbackPopup .line .radio {background:url(../images/chk.png) no-repeat; display:inline-block; vertical-align:top; width:26px; height:26px;}
+.callback .callbackPopup .line .radio input {vertical-align:top; width:26px; height:26px; border:0; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+.callback .callbackPopup .line .radio.radioChecked {background-position:-26px 0;}
+.callback .callbackPopup .line .label {display:inline-block; vertical-align:top; padding:5px 2px 0 0;}
+
+.btnLook {background:url(../images/btn_look.png) no-repeat; display:inline-block; vertical-align:top; width:82px; height:33px; border:0; cursor:pointer;}
+.btnWebCallback {background:url(../images/btn_webcallback.png) no-repeat; display:inline-block; vertical-align:top; width:136px; height:33px; border:0; cursor:pointer;}
+
+
+
+.cusel3.cuselOpen {z-index:10;}
+
+.cusel3,
+.cusel3 .cuselFrameRight,
+.cusel3 .jScrollPaneDrag,
+.cusel3 .jScrollArrowUp,
+.cusel3 .jScrollArrowDown {
+	background: url(../images/select_3.png) no-repeat;
+}
+
+.cusel3 { /* общий вид селекта включая стрелку справа */
+	height:27px;
+	background-position: left top;
+	display: inline-block;
+	position: relative;
+	z-index:1;
+	cursor: pointer;
+	font:14px 'MetaNormalCyrLFRomanRegular';
+}
+
+.cusel3 .cuselFrameRight { /* левая чсть селект. обыно скругление и левая граница */
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 30px;
+	background-position: right top;
+}
+
+.cusel3 .cuselText { /* контейнер для отображенного текста селект */
+	height: 20px;
+	padding: 6px 0 0 10px; /* подбираем отступы и высоту для видимого текста в селекте */
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	font:14px 'MetaNormalCyrLFRomanRegular';
+}
+
+.cusel3 .cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #ffffff; /* фон выпадающего списка */
+	min-width: 100%;
+	width: 99%;
+}
+
+.cusel3 .jScrollPaneContainer {
+	top:1px;
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	border: 1px solid #dadada; /* границы выпадающего спиcка */
+}
+
+
+.chat {width:23px; height:118px; position:fixed; z-index:100; left:0; bottom:200px;}
+.btnChat {background:url(../images/btn_chat.png) no-repeat; display:block; width:23px; height:118px; position:relative; z-index:110;}
+
+.chat .chatPopup {background:url(../images/popup_bg.png) no-repeat; width:369px; padding:34px 36px 0 31px; position:absolute; top:-200px; left:3px; z-index:100; text-align:left; font:14px 'MetaNormalCyrLFRomanRegular'; color:#000000; display:none;}
+.chat .popup_b {background:url(../images/popup_b.png) no-repeat; width:434px; height:50px; position:absolute; left:0; bottom:-50px;}
+.chat .chatPopup .block {width:369px;}
+.chat .chatPopup h2 {font-family:'MetaMediumCyrLF-RomanRegular'; color:#122c6f; text-align:center; margin-bottom:10px;}
+.chat .chatPopup .text1 {font-size:13px; color:#7d7d7d; text-align:center; margin-bottom:10px;}
+.chat .chatPopup .line {width:100%; padding-bottom:10px;}
+.chat .chatPopup .line .lBlock {width:135px; float:left;}
+.chat .chatPopup .line .rBlock {width:230px; float:right;}
+.chat .chatPopup .line .textfield1 {background:url(../images/textfield7.png) no-repeat; width:200px; height:21px; padding:6px 10px 0 10px; float:left;}
+.chat .chatPopup .line .textfield1 input {width:200px; background:none; border:0; font:12px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
+.chat .chatPopup .line textarea {width:218px; height:80px; border:1px solid #dadada; font:12px 'MetaMediumCyrLF-RomanRegular'; color:#000000; resize:none;}
+.chat .chatPopup .line .text2 {clear:both; font-size:9px; padding-top:5px;}
+.chat .chatPopup .line .text3 {display:block; position:relative;}
+.chat .chatPopup .line .text3 span {position:absolute; top:0; right:0; color:#ff0000;}
+.chat .chatPopup .line .chk {background:url(../images/chk.png) no-repeat; display:inline-block; vertical-align:top; width:26px; height:26px; margin-top:5px;}
+.chat .chatPopup .line .chk input {vertical-align:top; width:26px; height:26px; border:0; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+.chat .chatPopup .line .chk.chkChecked {background-position:-26px 0;}
+.chat .chatPopup .line .label {display:inline-block; vertical-align:top; padding:0 5px 0 0;}
+.chat .chatPopup .line .label.w130 {width:130px;}
+.chat .chatPopup .line .label.w95 {width:95px;}
+.chat .chatPopup .line .smile {margin:10px 0 0 3px;}
+
+.btnSend {background:url(../images/btn_send.png) no-repeat; display:inline-block; vertical-align:top; width:60px; height:33px; border:0; cursor:pointer;}
