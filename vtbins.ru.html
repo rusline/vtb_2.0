@@ -692,20 +692,17 @@ var objTimerPnones = window.setTimeout("reload_pict_nav_phone('over')", 5000);
 	<div class="center">
 		<div class="mainBlock">
 
-<!-- -------------------- ЗАМЕНИТЬ --------------------------- -->
-
 <div class="mainBlock1">
 	<div class="conteiner">
 		<div class="imgBlock">
 			<div class="img_bg">
 				<div class="img_bgr">
 					<div class="imgBlock1">
-							<a href="http://www.vtbins.ru/individual/occurrence/"><img src="vtbins.ru_files/img10000.png" alt="" class="Img1"></a>
+													<a href="http://www.vtbins.ru/individual/occurrence/"><img src="vtbins.ru_files/img10000.png" alt="" class="Img1"></a>
 							<a href="http://www.vtbins.ru/individual/auto_insurance/osago/"><img src="vtbins.ru_files/img20000.png" alt="" class="Img2"></a>
 							<a href="http://www.vtbins.ru/individual/abroad/"><img src="vtbins.ru_files/img30000.png" alt="" class="Img3"></a>
 							<a href="http://www.vtbins.ru/individual/property/"><img src="vtbins.ru_files/img40000.png" alt="" class="Img4"></a>
-							<a href="#"><img src="vtbins.ru_files/img50000.png" alt="" class="Img5"></a>
-					</div>
+											</div>
 				</div>
 			</div>
 		</div>
@@ -716,35 +713,41 @@ var objTimerPnones = window.setTimeout("reload_pict_nav_phone('over')", 5000);
 				<div class="menu">
 					<table>
 						<tr>
-							<td>
-							  <a href="http://www.vtbins.ru/individual/occurrence/">Жизнь и здоровье</a>
-							 	<div class="list"><a href="">ОтЛичная защита</a><span><a href="#">Онлайн</a></span></div>
+							<td><a href="http://www.vtbins.ru/individual/occurrence/">Жизнь и здоровье</a>
+								<div class="promo">
+									<a href="http://www.vtbins.ru/individual/occurrence/online/">
+										Купить онлайн									</a>
+								</div>
 							</td>
-							<td>
-							   <a href="http://www.vtbins.ru/individual/auto_insurance/osago/">Автострахование</a>
-							   <div class="list"><a href="">Каско</a></div>
-							   <div class="list"><a href="">ОСАГО</a></div>
-							 </td>
+							<td><a href="http://www.vtbins.ru/individual/auto_insurance/osago/">Автострахование</a></td>
 							<td><a href="http://www.vtbins.ru/individual/abroad/">Путешествия</a>
-								<div class="list"><a href="">ВЗР</a><span><a href="#">Онлайн</a></span></div>
+								<div class="promo">
+									<a href="https://www.vtbins.ru/individual/abroad/online/">
+										Купить онлайн									</a>
+								</div>
 							</td>
-							<td>
-							  <a href="http://www.vtbins.ru/individual/property/">Имущество</a>
-              	<div class="list"><a href="">Квартиры</a><span><a href="#">Онлайн</a></span></div>
-              	<div class="list"><a href="">Дом</a><span><a href="#">Онлайн</a></span></div>
-             </td>
-             <td>
-							  <a href="">Прочие продукты</a>
-              	<div class="list"><a href="">Потеря работы</a><span><a href="#">Онлайн</a></span></div>
-             </td>
+							<td><a href="http://www.vtbins.ru/individual/property/">Имущество</a>
+								<div class="promo drop">
+									<a href="https://www.vtbins.ru/individual/property/kvartira_online/">
+										Купить онлайн&nbsp;&nbsp;&nbsp;
+										<i></i>
+									</a>
+								</div>
+								<div class="dropdown-container">
+									<div class="dropdown">
+										<div class="border">
+											<a href="http://www.vtbins.ru/individual/property/kvartira_online/">Квартира</a>
+											<a href="http://www.vtbins.ru/individual/property/dom_online/">Дом</a>
+										</div>
+									</div>
+								</div>
+							</td>
 						</tr>
 					</table>
 				</div>
 			</div>
 		</div>
 	</div>
-
-<!-- -------------------- ЗАМЕНИТЬ --------------------------- -->
 
 <script>
 	$(function() {
@@ -1970,11 +1973,8 @@ $(document).ready(function(){
 	});
 });
 </script>						</div>
-<div class="item">
 
-							<a href="http://www.vtbins.ru/individual/property/activateprivet/">Активировать полис «Привет, сосед!»</a>
 
-						</div>
 						<div class="item">
 							<noindex><a href="http://www.vtbins.ru/#" rel="nofollow" title="Отзывы и предложения" id="form_127" class="commentlink">Отзывы и предложения</a></noindex>
 
@@ -2302,6 +2302,28 @@ $(document).ready(function(){
 	});
 });
 </script>							</div>
+
+<!-- ///////////////////////////// -->
+<div class="item active-link">
+  <script>
+  $(document).ready(function(){
+  	$(".active-link span").click(function () {
+	   	$(".active-link-drop").toggle();
+		return false;
+  	});
+	});
+</script>
+	<span><a href="">Активировать полис</a></span>
+	<div class="active-link-drop">
+	 <ul>
+	 <li><a href="#">Привет сосед!</a></li>
+   <li><a href="#">Потеря работы</a></li>
+   </ul>
+  </div>
+</div>
+<!-- ///////////////////////////// -->
+
+
 						<div class="item">
 							<noindex><a href="http://www.vtbins.ru/#" rel="nofollow" title="Оформить заявку" id="form_192" class="consultLink" style="display: none;">Оформить заявку</a></noindex>
 

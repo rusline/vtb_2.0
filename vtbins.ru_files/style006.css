@@ -84,27 +84,17 @@ h3 {font:18px 'MetaMediumCyrLF-RomanRegular'; color:#000000;}
 .center .mainBlock1 .imgBlock .img_bg {background:url(main_img.jpg) no-repeat; width:100%; height:330px;}
 .center .mainBlock1 .imgBlock .img_bgr {background:url(main_imh.jpg) right 0 no-repeat; width:100%; height:330px; position:relative;}
 
-/* ------------------ «¿Ã≈Õ»“‹ ---------------------- */
-
 .center .mainBlock1 .imgBlock .imgBlock1 img {position:absolute; top:0;}
 .center .mainBlock1 .imgBlock .imgBlock1 .Img1 {left:1%; z-index:2;}
-.center .mainBlock1 .imgBlock .imgBlock1 .Img2 {left:20%; z-index:1;}
-.center .mainBlock1 .imgBlock .imgBlock1 .Img3 {right:38%; z-index:2;}
-.center .mainBlock1 .imgBlock .imgBlock1 .Img4 {right:20%; z-index:1;}
-.center .mainBlock1 .imgBlock .imgBlock1 .Img5 {right:1%; z-index:1;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img2 {left:30%; margin-left:-70px; z-index:1;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img3 {right:30%; margin-right:-70px; z-index:2;}
+.center .mainBlock1 .imgBlock .imgBlock1 .Img4 {right:1%; z-index:1;}
 
 .center .mainBlock1 .menuBlock {width:100%; min-width:1000px; height:72px;}
 .center .mainBlock1 .menuBlock .menu {padding:0 20px; font:20px 'MetaMediumCyrLF-RomanRegular';}
 .center .mainBlock1 .menuBlock .menu table {width:100%; border-collapse:collapse;}
-.center .mainBlock1 .menuBlock .menu td {height:80px; width:20%;position:relative;vertical-align:top;padding-top:15px;padding-left:50px}
-.center .mainBlock1 .menuBlock .menu a {color:#2378ac;white-space:nowrap}
-.center .mainBlock1 .menuBlock .menu td div.list{font-family:Arial;line-height:18px;padding-top:4px}
-.center .mainBlock1 .menuBlock .menu td div.list a{color:#2378ac;text-decoration:none;border-bottom:1px dashed #2378ac;font-size:13px}
-.center .mainBlock1 .menuBlock .menu td div.list a:hover{border-bottom:0}
-.center .mainBlock1 .menuBlock .menu td div.list span{color:#ff0000;font-size:11px;margin-left:5px;margin-top:0px;position:absolute}
-.center .mainBlock1 .menuBlock .menu td div.list span a{color:#ff0000;text-decoration:none;border-bottom:0;font-size:11px}
-
-/* ------------------ «¿Ã≈Õ»“‹ ---------------------- */
+.center .mainBlock1 .menuBlock .menu td {height:72px; width:25%; text-align:center;position:relative;}
+.center .mainBlock1 .menuBlock .menu a {color:#2378ac;}
 
 .center .mainBlock2 {width:100%; padding-top:40px;}
 .center .mainBlock2 h1 {font:18px 'MetaMediumCyrLF-RomanRegular';}
@@ -570,3 +560,10 @@ width: 420px !important;
 .head .block1 .left .txt1 a {
 padding-right: 25px;
 }
+
+
+.active-link span a{background:url(../vtbins.ru_files/r_arrow22.png) 100% 3px no-repeat;display:block;padding-right:16px}
+.active-link-drop{display:none}
+.active-link ul{margin:10px 0 0 15px;padding:0;color:#2378AC;list-style-type:disc;}
+.active-link ul li{padding-bottom:4px}
+.active-link ul li a{color:#2378AC;text-decoration:none;border:0 !important}
